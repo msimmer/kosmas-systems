@@ -1,5 +1,5 @@
 backend:
-  name: bitbucket
+  name: Bitbucket
   repo: msimmer/kosmas-systems # Path to your Github repository
   branch: master # Branch to update
 
