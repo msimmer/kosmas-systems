@@ -21,8 +21,9 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
+logo: 'logo.jpg'
 
-og_image: ''
+og_image: 'logo.jpg'
 
 twitter_username: jekyllrb
 twitter_url: 'http://example.com'
@@ -66,11 +67,7 @@ assets:
   css_compressor: sass
   autosize: true
   debug: false
-  sources:
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/images
-    - _assets/fonts
+
   prefix: '/assets'
   assets:
     - 'application.css'
@@ -99,4 +96,18 @@ assets:
     - _assets/stylesheets
     - _assets/fonts
     - _assets/images
-    - _assets/bower
+    - _vendor
+
+
+collections:
+  apparel:
+    nice_name: "Apparel"
+    singular_name: "Apparel"
+    output: true
+    permalink: /apparel/:path/
+
+apparel:
+  collection: apparel
+  template: _tmpl/product.yml
+  extension: md
+  dir: _apparel

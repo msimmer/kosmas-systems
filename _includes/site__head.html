@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <!-- meta -->
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.og_image | image_path }}">
+    <meta property="twitter:site" content="{{ site.twitter_username }}">
+    <meta property="twitter:url" content="{{ site.twitter_url }}">
+    <meta property="twitter:title" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:description" content="{{ site.description | truncate: 180 }}">
+    <meta property="twitter:image:src" content="{{ site.twitter_image | image_path }}">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% asset_path 'apple-touch-icon-180x180.png' %}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{% asset_path 'apple-touch-icon-120x120.png' %}" />
+    <link rel="apple-touch-icon" sizes="167x167" href="{% asset_path 'apple-touch-icon-167x167.png' %}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path 'apple-touch-icon-152x152.png' %}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{% asset_path 'apple-touch-icon-57x57.png' %}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{% asset_path 'apple-touch-icon-76x76.png' %}" />
+    <link rel="icon" type="image/png" sizes="196x196" href="{% asset_path 'favicon-196x196.png' %}" />
+    <link rel="icon" type="image/png" sizes="160x160" href="{% asset_path 'favicon-160x160.png' %}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{% asset_path 'favicon-96x96.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% asset_path 'favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% asset_path 'favicon-16x16.png' %}" />
+    <link name="msapplication-TileColor" content="#ffffff" />
+    <link name="msapplication-TileImage" content="{% asset_path 'mstile-144x144.png' | image  %} />
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+
+    {% stylesheet application.css %}
+
+</head>
+<body>
+<div class="site">
+
+<header>
+    <div class="logo__container"></div>
+</header>

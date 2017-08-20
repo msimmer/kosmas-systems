@@ -1,16 +1,11 @@
-<!doctype html>
-<html>
+{% include site__head.html %}
 
-  {% include head.html %}
+<main>
+    {% include nav__products.html %}
 
-  <body>
+    <article>
+        {{ content }}
+    </article>
+</main>
 
-    {% include header.html %}
-
-    <main>{{content}}</main>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
+{% include site__tail.html %}

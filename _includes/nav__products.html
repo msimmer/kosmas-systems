@@ -1,0 +1,10 @@
+<nav class="nav__products">
+    <button class="nav__toggle">0</button>
+    <ul class="product__list">
+        {% for entry in site.apparel %}
+            <li class="product__list__item">
+                <a class="product__list__item__link{% if entry.url == page.url %} link--active{% endif %}" href="{{ entry.url }}">{{ entry.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

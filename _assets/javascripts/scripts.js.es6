@@ -1,2 +1,7 @@
 
-[1,2,3].map(x => console.log(x));
+$(() => {
+    $('.nav__toggle').on('click', function() {
+        $(this).toggleClass('open')
+        $(this).closest('.nav__products').toggleClass('open')
+    })
+})
