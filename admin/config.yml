@@ -20,6 +20,7 @@ collections:
 
       - {label: "Cost", name: cost, widget: number}
       - {label: "Stock", name: in_stock, widget: number}
+      - {label: Layout, name: layout, widget: hidden, default: product}
 
       - name: shipping
         label: Shipping
@@ -28,6 +29,14 @@ collections:
           - {label: Germany, name: germany, widget: number}
           - {label: Europe, name: europe, widget: number}
           - {label: Worldwide, name: world, widget: number}
+
+      - name: sizes
+        label: Sizes
+        widget: object
+        fields:
+          - {label: Small, name: small, widget: boolean}
+          - {label: Medium, name: medium, widget: boolean}
+          - {label: Large, name: large, widget: boolean}
 
 
       - name: gallery

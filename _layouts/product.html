@@ -4,7 +4,59 @@
     {% include nav__products.html %}
 
     <article>
-        {{ content }}
+
+        <header class="article__header">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.cost | currency }}</p>
+        </header>
+
+        <section class="purchase">
+
+            {% if page.in_stock <= 0 %}
+                <strong>sold out!</strong>
+            {% else %}
+                <label>
+                    <span>Shipping</span>
+                    <select class="purchase__shipping">
+                        {% for entry_hash in page.shipping %}
+                            {% for entry in entry_hash %}
+                                <option value="{{ entry[0] }}">{{ entry[0] | capitalize }} {{ entry[1] | currency }}</option>
+                            {% endfor %}
+                        {% endfor %}
+                    </select>
+                </label>
+                <label>
+                    <span>Sizes</span>
+                    <select class="purchase__sizes">
+                        {% for entry_hash in page.sizes %}
+                            {% for entry in entry_hash %}
+                                <option {% if entry[1] == false %}{{ 'disabled' }}{% endif %} value="{{ entry[1] }}">{{ entry[0] | capitalize }}</option>
+                            {% endfor %}
+                        {% endfor %}
+                    </select>
+                </label>
+            {% endif %}
+        </section>
+
+        <section class="content">
+            {{ content }}
+        </section>
+
+        <section class="gallery">
+            {% if page.gallery != empty and page.gallery.size > 0 %}
+                {% for entry in page.gallery %}
+                    <figure class="gallery__entry">
+                        <img alt="{% if entry.alt != '' %}{{ entry.alt }}{% else %}{{ entry.image | remove:'/images/uploads/' }}{% endif %}" src="{{ entry.image }}" />
+                    </figure>
+                    {% if entry.description %}
+                        <figcaption>
+                            {{ entry.description }}
+                        </figcaption>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </section>
+
     </article>
 </main>
 

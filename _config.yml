@@ -37,6 +37,7 @@ markdown: kramdown
 plugins:
   - jekyll-assets
   - uglifier
+  - ./filters/currency
 
 include:
   - 'fonts'

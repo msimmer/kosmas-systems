@@ -6,7 +6,11 @@ cost: 0
 in_stock: 0
 gallery:
 shipping:
-  - germany: 0
-    europe: 0
-    world: 0
+  - germany: 100
+    europe: 200
+    world: 300
+sizes:
+  - small: true
+    medium: true
+    large: true
 ---

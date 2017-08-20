@@ -2,8 +2,8 @@
 layout: product
 date: 2017-08-20 18:56:15 +0200
 title: "test one"
-cost: 10.00
-in_stock: 3
+cost: 799
+in_stock: 0
 ---
 
 # one 
