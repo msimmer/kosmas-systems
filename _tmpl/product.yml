@@ -4,4 +4,9 @@ date:
 title:
 cost: 0
 in_stock: 0
+gallery:
+shipping:
+  - germany: 0
+    europe: 0
+    world: 0
 ---

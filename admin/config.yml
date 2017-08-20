@@ -15,12 +15,25 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      # - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Featured Image", name: thumbnail, widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
+
+      - {label: "Cost", name: cost, widget: number}
+      - {label: "Stock", name: in_stock, widget: number}
+
+      - name: shipping
+        label: Shipping
+        widget: object
+        fields:
+          - {label: Germany, name: germany, widget: number}
+          - {label: Europe, name: europe, widget: number}
+          - {label: Worldwide, name: world, widget: number}
+
+
       - name: gallery
         label: Gallery
         widget: list
         fields:
           - {label: "Alt Tag", name: alt, widget: string}
-          - {label: Description, name: description, widget: markdown}
+          - {label: Description, name: description, widget: string}
           - {label: Image, name: image, widget: image}
