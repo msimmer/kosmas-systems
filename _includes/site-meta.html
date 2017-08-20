@@ -1,0 +1,12 @@
+<meta name="description" content="{{ site.description }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:image" content="{{ site.og_image | image_path }}">
+<meta property="twitter:site" content="{{ site.twitter_username }}">
+<meta property="twitter:url" content="{{ site.twitter_url }}">
+<meta property="twitter:title" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:description" content="{{ site.description | truncate: 180 }}">
+<meta property="twitter:image:src" content="{{ site.twitter_image | image_path }}">

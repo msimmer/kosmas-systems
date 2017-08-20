@@ -1,0 +1,90 @@
+
+// Utility functions
+// https://css-tricks.com/snippets/sass/str-replace-function/
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+// Font mixins—Thanks Bourbon.io :) !
+// @_contains: https://github.com/thoughtbot/bourbon/blob/4353bb9b7394674a701df22c9a1825e8e7432141/core/bourbon/validators/_contains.scss
+// @_font-source-declaration: https://github.com/thoughtbot/bourbon/blob/4353bb9b7394674a701df22c9a1825e8e7432141/core/bourbon/utilities/_font-source-declaration.scss
+// @font-face mixin: https://github.com/thoughtbot/bourbon/blob/7a5531088e1649e2b5fb225d749f899b62a78107/core/bourbon/library/_font-face.scss
+
+@function _contains(
+    $list,
+    $values...
+  ) {
+
+  @each $value in $values {
+    @if type-of(index($list, $value)) != "number" {
+      @return false;
+    }
+  }
+
+  @return true;
+}
+
+@function _font-source-declaration(
+    $font-family,
+    $file-path,
+    $asset-pipeline,
+    $file-formats
+  ) {
+
+  $src: ();
+
+  $formats-map: (
+    eot:   "#{$file-path}.eot?#iefix" format("embedded-opentype"),
+    otf:   "#{$file-path}.otf" format("opentype"),
+    woff2: "#{$file-path}.woff2" format("woff2"),
+    woff:  "#{$file-path}.woff" format("woff"),
+    ttf:   "#{$file-path}.ttf" format("truetype"),
+    svg:   "#{$file-path}.svg##{$font-family}" format("svg"),
+  );
+
+  @each $key, $values in $formats-map {
+    @if _contains($file-formats, $key) {
+      $file-path: nth($values, 1);
+      $font-format: nth($values, 2);
+
+      @if $asset-pipeline == true {
+        // sort of a hacky way to get file extensions to output properly by replacing duplicate extensions
+        $src: append($src, font-url(str-replace($file-path, "#{$key}.#{$key}", $key)) $font-format, comma);
+      } @else {
+        $src: append($src, url(str-replace($file-path, "#{$key}.#{$key}", $key)) $font-format, comma);
+      }
+    }
+  }
+
+  @return $src;
+}
+
+@mixin font-face(
+    $font-family,
+    $file-path,
+    $file-formats: ('woff', 'woff2', 'svg', 'otf'),
+    $asset-pipeline: true
+  ) {
+
+  @font-face {
+    font-family: $font-family;
+    src: _font-source-declaration(
+      $font-family,
+      $file-path,
+      $asset-pipeline,
+      $file-formats
+    );
+    @content;
+  }
+}
+
+// @include font-face(FontName, asset_path('FontName'), 'otf', false) {
+//   font-weight: normal;
+//   font-style: normal;
+// };
