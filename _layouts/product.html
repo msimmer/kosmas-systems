@@ -12,12 +12,10 @@
 
         <section class="purchase">
 
-            {% if page.in_stock <= 0 %}
-                <strong>sold out!</strong>
-            {% endif %}
-
-            {% if page.paypal != empty %}
+            {% if page.in_stock > 0 and page.paypal != empty %}
                 <div>{{ page.paypal }}</div>
+            {% else %}
+                <strong>sold out!</strong>
             {% endif %}
 
         </section>

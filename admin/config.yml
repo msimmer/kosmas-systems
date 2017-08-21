@@ -40,7 +40,7 @@ collections:
 
 
         - name: gallery
-          label: Gallery
+          label: "Gallery Image"
           widget: list
           fields:
               - {label: "Alt Tag", name: alt, widget: string}
