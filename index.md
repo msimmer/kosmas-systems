@@ -1,20 +1,5 @@
 ---
-layout: page
+layout: home
 title: Home
 permalink: /
 ---
-
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}
-# Hello {{ page.title }}

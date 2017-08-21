@@ -1,0 +1,17 @@
+<div class="product__slider">
+    {% for entry in site.apparel %}
+        {% if entry.thumbnail %}
+            <a
+                class="product__slider__thumbnail"
+                style="background-image: url({{ entry.thumbnail }});"
+                href="{{ entry.url }}"
+                title="{{ entry.title }}"
+            >&nbsp;</a>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<script>
+window.ksms = window.ksms || {}
+window.ksms.slider = 1
+</script>

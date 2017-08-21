@@ -41,7 +41,7 @@
     {% stylesheet application.css %}
 
 </head>
-<body>
+<body class="{{ page.layout }}{% if page.slug %} {{ page.layout }}__{{ page.slug }}{% else %} {{ page.layout }}__{{ page.title | downcase | replace: ' ', '-' }}{% endif %}">
 <div class="site">
 
 <header class="site__header">
