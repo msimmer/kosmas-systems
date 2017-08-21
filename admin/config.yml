@@ -10,7 +10,7 @@ collections:
     label: Tyrant # Used in the UI
     folder: _tyrant # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{ slug }}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     card: {type: alltype, text: title}
     fields: # The fields for each document, usually in front matter
         - {label: Title, name: title, widget: string}
@@ -36,7 +36,7 @@ collections:
     label: Furniture
     folder: _furniture
     create: true
-    slug: "{{ slug }}"
+    slug: "{{slug}}"
     card: {type: alltype, text: title}
     fields:
         - {label: Title, name: title, widget: string}
@@ -62,7 +62,7 @@ collections:
     label: Pages
     folder: _pages
     create: true
-    slug: "{{ slug }}"
+    slug: "{{slug}}"
     card: {type: alltype, text: title}
     fields:
         - {label: Title, name: title, widget: string}

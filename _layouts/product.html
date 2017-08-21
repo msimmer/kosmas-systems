@@ -7,12 +7,14 @@
 
         <header class="article__header">
             <h1>{{ page.title }}</h1>
-            <p>{{ page.cost | currency }}</p>
+            {% assign cost = page.cost | plus: 0 %}
+            <p>{{ cost | currency }}</p>
         </header>
 
         <section class="purchase">
 
-            {% if page.in_stock > 0 and page.paypal != empty %}
+            {% assign in_stock = page.in_stock | plus: 0 %}
+            {% if in_stock > 0 and page.paypal != empty %}
                 <div>{{ page.paypal }}</div>
             {% else %}
                 <strong>sold out!</strong>
