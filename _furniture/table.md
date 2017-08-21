@@ -8,7 +8,7 @@ gallery:
   - image: >-
       /images/uploads/553CEBD6-this-day-in-april-26th-2015-slipknot-angel-corpse-1349-axel-rudi-pell-primordial-vomitory-deep-purple-the-ocean-sodom-vicious-rumors-image.jpg
   - image: /images/uploads/x-angel1.gif
-paypal: noop
+paypal: ''
 shipping:
   - europe: 200
     germany: 100
@@ -20,4 +20,5 @@ sizes:
 title: table
 in_stock: 1
 ---
+
 
