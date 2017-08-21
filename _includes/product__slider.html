@@ -1,14 +1,23 @@
+{% assign navigation = site.collections | where: 'navigation', true %}
+{% assign navigation = navigation | reverse %}
+
 <div class="product__slider">
-    {% for entry in site.apparel %}
-        {% if entry.thumbnail %}
-            <a
-                class="product__slider__thumbnail"
-                style="background-image: url({{ entry.thumbnail }});"
-                href="{{ entry.url }}"
-                title="{{ entry.title }}"
-            >&nbsp;</a>
+
+    {% for collection in navigation %}
+        {% if collection.docs.size > 0 %}
+            {% for entry in site[collection.label] %}
+                {% if entry.thumbnail %}
+                    <a
+                        class="product__slider__thumbnail"
+                        style="background-image: url({{ entry.thumbnail }});"
+                        href="{{ entry.url }}"
+                        title="{{ entry.title }}"
+                    >&nbsp;</a>
+                {% endif %}
+            {% endfor %}
         {% endif %}
     {% endfor %}
+
 </div>
 
 <script>

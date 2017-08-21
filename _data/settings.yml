@@ -8,4 +8,4 @@ og_image: '/images/uploads/logo.jpg'
 google_analytics_tracking_code: 'UA-XXXXX-Y'
 twitter_username: jekyllrb
 twitter_url: 'http://example.com'
-twitter_image: ''
+twitter_image: '/images/uploads/logo.jpg'
