@@ -1,50 +1,50 @@
 backend:
-    name: github
-    repo: msimmer/kosmas-systems # Path to your Github repository
-    branch: master # Branch to update
+  name: github
+  repo: msimmer/kosmas-systems # Path to your Github repository
+  branch: master # Branch to update
 
 media_folder: images/uploads # Media files will be stored in the repo under images/uploads
 
 collections:
-    - name: apparel # Used in routes, e.g., /admin/collections/blog
-        label: Apparel # Used in the UI
-        folder: _apparel # The path to the folder where the documents are stored
-        create: true # Allow users to create new documents in this collection
-        slug: "{{ slug }}" # Filename template, e.g., YYYY-MM-DD-title.md
-        card: {type: alltype, text: title}
-        fields: # The fields for each document, usually in front matter
-            - {label: Title, name: title, widget: string}
-            - {label: "Publish Date", name: date, widget: datetime}
-            - {label: Featured Image, name: thumbnail, widget: image}
-            - {label: Body, name: body, widget: markdown}
+  - name: apparel # Used in routes, e.g., /admin/collections/blog
+    label: Apparel # Used in the UI
+    folder: _apparel # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{ slug }}" # Filename template, e.g., YYYY-MM-DD-title.md
+    card: {type: alltype, text: title}
+    fields: # The fields for each document, usually in front matter
+        - {label: Title, name: title, widget: string}
+        - {label: "Publish Date", name: date, widget: datetime}
+        - {label: Featured Image, name: thumbnail, widget: image}
+        - {label: Body, name: body, widget: markdown}
 
-            - {label: Cost, name: cost, widget: number}
-            - {label: Stock, name: in_stock, widget: number}
-            - {label: Layout, name: layout, widget: hidden, default: product}
+        - {label: Cost, name: cost, widget: number}
+        - {label: Stock, name: in_stock, widget: number}
+        - {label: Layout, name: layout, widget: hidden, default: product}
 
-            # - name: shipping
-            #   label: Shipping
-            #   widget: object
-            #   fields:
-            #     - {label: Germany, name: germany, widget: number}
-            #     - {label: Europe, name: europe, widget: number}
-            #     - {label: Worldwide, name: world, widget: number}
+          # - name: shipping
+          #   label: Shipping
+          #   widget: object
+          #   fields:
+          #     - {label: Germany, name: germany, widget: number}
+          #     - {label: Europe, name: europe, widget: number}
+          #     - {label: Worldwide, name: world, widget: number}
 
-            # - name: sizes
-            #   label: Sizes
-            #   widget: object
-            #   fields:
-            #     - {label: Small, name: small, widget: boolean}
-            #     - {label: Medium, name: medium, widget: boolean}
-            #     - {label: Large, name: large, widget: boolean}
+          # - name: sizes
+          #   label: Sizes
+          #   widget: object
+          #   fields:
+          #     - {label: Small, name: small, widget: boolean}
+          #     - {label: Medium, name: medium, widget: boolean}
+          #     - {label: Large, name: large, widget: boolean}
 
 
-            - name: gallery
-                label: Gallery
-                widget: list
-                fields:
-                    - {label: "Alt Tag", name: alt, widget: string}
-                    - {label: Description, name: description, widget: string}
-                    - {label: Image, name: image, widget: image}
+        - name: gallery
+          label: Gallery
+          widget: list
+          fields:
+              - {label: "Alt Tag", name: alt, widget: string}
+              - {label: Description, name: description, widget: string}
+              - {label: Image, name: image, widget: image}
 
-            - {label: "Paypal Button", name: paypal, widget: text}
+        - {label: "Paypal Button", name: paypal, widget: text}
