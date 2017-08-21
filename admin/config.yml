@@ -6,9 +6,9 @@ backend:
 media_folder: images/uploads # Media files will be stored in the repo under images/uploads
 
 collections:
-  - name: apparel # Used in routes, e.g., /admin/collections/blog
-    label: Apparel # Used in the UI
-    folder: _apparel # The path to the folder where the documents are stored
+  - name: tyrant # Used in routes, e.g., /admin/collections/blog
+    label: Tyrant # Used in the UI
+    folder: _tyrant # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{ slug }}" # Filename template, e.g., YYYY-MM-DD-title.md
     card: {type: alltype, text: title}
@@ -22,22 +22,31 @@ collections:
         - {label: Stock, name: in_stock, widget: number}
         - {label: Layout, name: layout, widget: hidden, default: product}
 
-          # - name: shipping
-          #   label: Shipping
-          #   widget: object
-          #   fields:
-          #     - {label: Germany, name: germany, widget: number}
-          #     - {label: Europe, name: europe, widget: number}
-          #     - {label: Worldwide, name: world, widget: number}
+        - name: gallery
+          label: "Gallery Image"
+          widget: list
+          fields:
+              - {label: "Alt Tag", name: alt, widget: string}
+              - {label: Description, name: description, widget: string}
+              - {label: Image, name: image, widget: image}
 
-          # - name: sizes
-          #   label: Sizes
-          #   widget: object
-          #   fields:
-          #     - {label: Small, name: small, widget: boolean}
-          #     - {label: Medium, name: medium, widget: boolean}
-          #     - {label: Large, name: large, widget: boolean}
+        - {label: "Paypal Button", name: paypal, widget: markdown}
 
+  - name: furniture
+    label: Furniture
+    folder: _furniture
+    create: true
+    slug: "{{ slug }}"
+    card: {type: alltype, text: title}
+    fields:
+        - {label: Title, name: title, widget: string}
+        - {label: "Publish Date", name: date, widget: datetime}
+        - {label: Featured Image, name: thumbnail, widget: image}
+        - {label: Body, name: body, widget: markdown}
+
+        - {label: Cost, name: cost, widget: number}
+        - {label: Stock, name: in_stock, widget: number}
+        - {label: Layout, name: layout, widget: hidden, default: product}
 
         - name: gallery
           label: "Gallery Image"
@@ -48,3 +57,44 @@ collections:
               - {label: Image, name: image, widget: image}
 
         - {label: "Paypal Button", name: paypal, widget: markdown}
+
+  - name: pages
+    label: Pages
+    folder: _pages
+    create: true
+    slug: "{{ slug }}"
+    card: {type: alltype, text: title}
+    fields:
+        - {label: Title, name: title, widget: string}
+        - {label: "Publish Date", name: date, widget: datetime}
+        # - {label: Featured Image, name: thumbnail, widget: image}
+        - {label: Body, name: body, widget: markdown}
+
+  - name: "settings"
+    label: "Settings"
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Settings"
+        file: "_data/settings.json"
+        description: "General Site Settings"
+        fields:
+          - {label: "Description", name: description, widget: string}
+          - {label: "Site URL", name: url, widget: string, default: 'https://example.com'}
+          - {label: "Logo", name: logo, widget: image}
+          - {label: "OG Image", name: og_image, widget: image}
+          - {label: "Google Analytics Tracking Code", name: google_analytics_tracking_code, widget: string}
+          - {label: "Google Analytics Site Verification", name: google_analytics_site_verification, widget: string}
+          - {label: "Twitter Username", name: twitter_username, widget: string}
+          - {label: "Twitter URL", name: twitter_url, widget: string, default: 'https://example.com'}
+          - {label: "Twitter Image", name: twitter_image, widget: image}
+
+          # - {label: "Global title", name: "site_title", widget: "string"}
+          # - label: "Post Settings"
+          #   name: posts
+          #   widget: "object"
+          #   fields:
+          #     - {label: "Number of posts on frontpage", name: front_limit, widget: number}
+          #     - {label: "Default Author", name: author, widget: string}
+          #     - {label: "Default Thumbnail", name: thumb, widget: image, class: "thumb"}

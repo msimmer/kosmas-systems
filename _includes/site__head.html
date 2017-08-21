@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="index, follow">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{{ site.title }}{% if page.title %} < {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <!-- meta -->
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ site.data.settings.description }}">
+    <meta name="google-site-verification" content="{{ site.data.settings.google_analytics_site_verification }}">
     <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.data.settings.url }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:image" content="{{ site.og_image | image_path }}">
-    <meta property="twitter:site" content="{{ site.twitter_username }}">
-    <meta property="twitter:url" content="{{ site.twitter_url }}">
-    <meta property="twitter:title" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:description" content="{{ site.data.settings.description }}">
+    <meta property="og:image" content="{{ site.data.settings.og_image | image_path }}">
+    <meta property="twitter:site" content="{{ site.data.settings.twitter_username }}">
+    <meta property="twitter:url" content="{{ site.data.settings.twitter_url }}">
+    <meta property="twitter:title" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.data.settings.url }}">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:description" content="{{ site.description | truncate: 180 }}">
-    <meta property="twitter:image:src" content="{{ site.twitter_image | image_path }}">
+    <meta property="twitter:description" content="{{ site.data.settings.description | truncate: 180 }}">
+    <meta property="twitter:image:src" content="{{ site.data.settings.twitter_image | image_path }}">
 
     <!-- icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% asset_path 'apple-touch-icon-180x180.png' %}" />
@@ -36,14 +37,17 @@
     <link name="msapplication-TileColor" content="#ffffff" />
     <link name="msapplication-TileImage" content="{% asset_path 'mstile-144x144.png' | image  %} />
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | prepend: site.data.settings.url }}">
 
     {% stylesheet application.css %}
 
 </head>
-<body class="{{ page.layout }}{% if page.slug %} {{ page.layout }}__{{ page.slug }}{% else %} {{ page.layout }}__{{ page.title | downcase | replace: ' ', '-' }}{% endif %}">
+<body class="{{ page.layout }}{% if page.slug %} {{ page.layout }}__{{ page.slug }}{% endif %}">
 <div class="site">
 
 <header class="site__header">
-    <a href="/" class="logo__container"></a>
+    <a
+        sytle="background-image: url('{{ site.data.settings.logo }}');"
+        href="/" class="logo__container"
+    >&nbsp;</a>
 </header>

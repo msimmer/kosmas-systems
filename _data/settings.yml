@@ -1,0 +1,11 @@
+description: >
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+url: "http://example.com"
+logo: '/images/uploads/logo.jpg'
+og_image: '/images/uploads/logo.jpg'
+google_analytics_tracking_code: 'UA-XXXXX-Y'
+twitter_username: jekyllrb
+twitter_url: 'http://example.com'
+twitter_image: ''

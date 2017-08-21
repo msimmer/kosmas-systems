@@ -13,23 +13,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
+title: Kosmas Systems
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
+
 url: "http://example.com" # the base hostname & protocol for your site
-logo: 'logo.jpg'
 
-og_image: 'logo.jpg'
+# twitter_username: jekyllrb
+# twitter_url: 'http://example.com'
+# twitter_image: ''
 
-twitter_username: jekyllrb
-twitter_url: 'http://example.com'
-twitter_image: ''
-
-github_username:  jekyll
+# github_username:  jekyll
 
 # Build settings
 markdown: kramdown
@@ -101,14 +99,37 @@ assets:
 
 
 collections:
-  apparel:
-    nice_name: "Apparel"
-    singular_name: "Apparel"
+  tyrant:
+    display_name: "Tyrant"
+    singular_name: "Tyrant"
     output: true
-    permalink: /apparel/:path/
+    permalink: /tyrant/:path/
+    navigation: true
+  furniture:
+    display_name: "Furniture"
+    singular_name: "Furniture"
+    output: true
+    permalink: /furniture/:path/
+    navigation: true
+  pages:
+    display_name: "Pages"
+    singular_name: "Page"
+    output: true
 
-apparel:
-  collection: apparel
+tyrant:
+  collection: tyrant
   template: _tmpl/product.yml
   extension: md
-  dir: _apparel
+  dir: _tyrant
+
+furniture:
+  collection: furniture
+  template: _tmpl/product.yml
+  extension: md
+  dir: _furniture
+
+pages:
+  collection: pages
+  template: _tmpl/page.yml
+  extension: md
+  dir: _pages
