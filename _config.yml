@@ -51,7 +51,7 @@ exclude:
   - Rakefile
   - bower.json
 
-# jekyll-assets settings
+# jekyll-assetsZZ settings
 assets:
   compress:
     js: uglifier
@@ -69,7 +69,6 @@ assets:
 
 
   autowrite: true
-  cdn: https://cdn.example.com
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false
   prefix: "/assets"

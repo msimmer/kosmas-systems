@@ -77,7 +77,7 @@ collections:
     files:
       - name: "general"
         label: "Site Settings"
-        file: "_data/settings.json"
+        file: "_data/settings.yml"
         description: "General Site Settings"
         fields:
           - {label: "Description", name: description, widget: string}
