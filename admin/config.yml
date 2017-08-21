@@ -47,4 +47,4 @@ collections:
               - {label: Description, name: description, widget: string}
               - {label: Image, name: image, widget: image}
 
-        - {label: "Paypal Button", name: paypal, widget: text}
+        - {label: "Paypal Button", name: paypal, widget: markdown}
