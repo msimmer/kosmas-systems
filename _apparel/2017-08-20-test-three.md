@@ -4,14 +4,6 @@ title: test three
 date: 2017-08-09T00:00:00+02:00
 cost: 1000
 in_stock: 3
-shipping:
-  - germany: 100
-    europe: 200
-    world: 300
-sizes:
-  - small: true
-    medium: true
-    large: false
 gallery:
   - description: here's a description foo bar baz
     image: /images/uploads/1.jpg

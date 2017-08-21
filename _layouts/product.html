@@ -14,28 +14,12 @@
 
             {% if page.in_stock <= 0 %}
                 <strong>sold out!</strong>
-            {% else %}
-                <label>
-                    <span>Shipping</span>
-                    <select class="purchase__shipping">
-                        {% for entry_hash in page.shipping %}
-                            {% for entry in entry_hash %}
-                                <option value="{{ entry[0] }}">{{ entry[0] | capitalize }} {{ entry[1] | currency }}</option>
-                            {% endfor %}
-                        {% endfor %}
-                    </select>
-                </label>
-                <label>
-                    <span>Sizes</span>
-                    <select class="purchase__sizes">
-                        {% for entry_hash in page.sizes %}
-                            {% for entry in entry_hash %}
-                                <option {% if entry[1] == false %}{{ 'disabled' }}{% endif %} value="{{ entry[1] }}">{{ entry[0] | capitalize }}</option>
-                            {% endfor %}
-                        {% endfor %}
-                    </select>
-                </label>
             {% endif %}
+
+            {% if page.paypal != empty %}
+                <div>{{ page.paypal }}</div>
+            {% endif %}
+
         </section>
 
         <section class="content">

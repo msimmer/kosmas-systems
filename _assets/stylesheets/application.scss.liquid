@@ -12,7 +12,7 @@ $small-height: $large-height / 4;
 
 $large-width: 80px;
 $medium-width: $large-width / 2;
-$small-height: $large-height / 4;
+$small-width: $large-width / 4;
 
 $screen-small: "only screen and (max-width : 600px)";
 // $screen-medium: "only screen and (min-width : 320px) and (max-width : 680px)";
@@ -127,8 +127,8 @@ nav.nav__products {
 
     ul.product__list {
         list-style: none;
-        margin: 1rem 0 0 0;
-        padding: 0;
+        margin: 0;
+        padding: 10px 0;
 
         @media #{$screen-small} {
             display: none;
@@ -141,6 +141,12 @@ nav.nav__products {
         li.product__list__item {
             margin: 0;
             padding: 0;
+
+            @media #{$screen-small} {
+                display: block;
+                height: $medium-height;
+            }
+
             a.product__list__item__link {
                 font-weight: bold;
                 display: block;
@@ -148,6 +154,17 @@ nav.nav__products {
 
                 &:first-child {
                     padding-top: 0;
+                }
+
+                @media #{$screen-small} {
+                    display: flex;
+                    align-items: center;
+                    height: $medium-height;
+                    height: 100%;
+                    width: 100%;
+                    padding-left: $small-width;
+                    display: flex;
+                    align-items: center;
                 }
 
             }
@@ -187,11 +204,16 @@ button.nav__toggle {
     display: none;
     position: absolute;
     right: 0;
-    background-color: lightgrey;
     height: $medium-height;
     width: $medium-width;
-    border: 1px solid $black;
     z-index: 1;
+    align-items: baseline;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 0.3;
+    background: transparent;
 
     &:active {
         background-color: grey;
@@ -199,11 +221,11 @@ button.nav__toggle {
 
     transition: transform 0.2s ease-in;
     &.open {
-        transform: rotate(90deg);
+        transform: rotate(45deg);
     }
 
     @media #{$screen-small} {
-        display: block;
+        display: flex;
     }
 }
 
@@ -237,7 +259,7 @@ figure {
 
 
 figcaption {
-    margin-bottom: 2rem;
+    margin: -$font-size/2 0 $font-size*2;
 }
 
 footer {
@@ -247,6 +269,6 @@ footer {
     min-height: $large-height;
     @media #{$screen-small} {
         padding: 0 $small-height;
-        min-height: $small-height;
+        min-height: $medium-height;
     }
 }
