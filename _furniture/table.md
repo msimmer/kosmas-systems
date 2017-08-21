@@ -21,3 +21,4 @@ title: table
 in_stock: '1'
 ---
 this is a required field
+
