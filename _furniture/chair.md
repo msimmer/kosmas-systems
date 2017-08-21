@@ -19,3 +19,4 @@ title: chair
 in_stock: '5'
 ---
 
+
