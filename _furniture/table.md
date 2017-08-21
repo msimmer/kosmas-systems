@@ -1,7 +1,7 @@
 ---
 date: '2017-08-21 19:41:53 +0200'
 thumbnail: /images/uploads/Angelcorpse-logo.png
-cost: '2500'
+cost: 2500
 layout: product
 gallery:
   - image: /images/uploads/117604078.jpg

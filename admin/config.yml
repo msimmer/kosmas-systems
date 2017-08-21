@@ -16,7 +16,7 @@ collections:
         - {label: Title, name: title, widget: string}
         - {label: "Publish Date", name: date, widget: datetime}
         - {label: Featured Image, name: thumbnail, widget: image}
-        - {label: Body, name: body, widget: markdown}
+        - {label: Body, name: body, widget: markdown, required: false}
 
         - {label: Cost, name: cost, widget: number}
         - {label: Stock, name: in_stock, widget: number}
@@ -30,7 +30,7 @@ collections:
               - {label: Description, name: description, widget: string}
               - {label: Image, name: image, widget: image}
 
-        - {label: "Paypal Button", name: paypal, widget: markdown}
+        - {label: "Paypal Button", name: paypal, widget: markdown, required: false}
 
   - name: furniture
     label: Furniture
@@ -42,7 +42,7 @@ collections:
         - {label: Title, name: title, widget: string}
         - {label: "Publish Date", name: date, widget: datetime}
         - {label: Featured Image, name: thumbnail, widget: image}
-        - {label: Body, name: body, widget: markdown}
+        - {label: Body, name: body, widget: markdown, required: false}
 
         - {label: Cost, name: cost, widget: number}
         - {label: Stock, name: in_stock, widget: number}
@@ -56,7 +56,7 @@ collections:
               - {label: Description, name: description, widget: string}
               - {label: Image, name: image, widget: image}
 
-        - {label: "Paypal Button", name: paypal, widget: markdown}
+        - {label: "Paypal Button", name: paypal, widget: markdown, required: false}
 
   - name: pages
     label: Pages
