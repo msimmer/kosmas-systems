@@ -1,11 +1,12 @@
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-url: "http://example.com"
-logo: '/images/uploads/logo.jpg'
-og_image: '/images/uploads/logo.jpg'
-google_analytics_tracking_code: 'UA-XXXXX-Y'
+  Write an awesome description for your new site here. You can edit this line in
+  _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+url: 'http://example.com'
+logo: /images/uploads/x-angel1.gif
+og_image: /images/uploads/exhumedslaughtercult.jpg
+google_analytics_tracking_code: UA-XXXXX-Y
+google_analytics_site_verification: foo
 twitter_username: jekyllrb
 twitter_url: 'http://example.com'
-twitter_image: '/images/uploads/logo.jpg'
+twitter_image: /images/uploads/Angelcorpse-logo.png
