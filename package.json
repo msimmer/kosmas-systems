@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://msimmer@bitbucket.org/msimmer/kosmas-systems.git"
+    "url": "git+https://msimmer@github.com/msimmer/kosmas-systems.git"
   },
   "author": "Maxwell Simmer <maxwell.simmer@gmail.com> (http://maxwellsimmer.com)",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/msimmer/kosmas-systems#readme",
+  "homepage": "https://github.com/msimmer/kosmas-systems#readme",
   "devDependencies": {
     "jquery": "^3.2.1"
   }

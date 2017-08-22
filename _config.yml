@@ -35,7 +35,7 @@ markdown: kramdown
 plugins:
   - jekyll-assets
   - uglifier
-  - ./filters/currency
+  - ./_filters/currency
 
 include:
   - 'fonts'
@@ -45,6 +45,8 @@ include:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - package.json
+  - package-lock.json
   - LICENSE
   - README.md
   - CNAME

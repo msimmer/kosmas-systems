@@ -11,11 +11,11 @@ $(() => {
         var speed = 200
 
         var interval = setInterval(function() {
-            images.eq(index).css({ opacity: 0 })
+            images.eq(index).hide()
             index = index + 1 > images.length - 1 ? 0 : index + 1
-            images.eq(index).css({ opacity: 1 })
+            images.eq(index).show()
         }, speed)
 
-        images.eq(index).css({ opacity: 1 })
+        images.eq(index).show()
     }
 })
