@@ -86,9 +86,12 @@ collections:
           - {label: "OG Image", name: og_image, widget: image}
           - {label: "Google Analytics Tracking Code", name: google_analytics_tracking_code, widget: string}
           - {label: "Google Analytics Site Verification", name: google_analytics_site_verification, widget: string}
-          - {label: "Twitter Username", name: twitter_username, widget: string}
-          - {label: "Twitter URL", name: twitter_url, widget: string, default: 'https://example.com'}
-          - {label: "Twitter Image", name: twitter_image, widget: image}
+
+
+
+          # - {label: "Twitter Username", name: twitter_username, widget: string}
+          # - {label: "Twitter URL", name: twitter_url, widget: string, default: 'https://example.com'}
+          # - {label: "Twitter Image", name: twitter_image, widget: image}
 
           # - {label: "Global title", name: "site_title", widget: "string"}
           # - label: "Post Settings"

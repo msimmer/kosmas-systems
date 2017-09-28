@@ -15,12 +15,6 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{{ site.data.settings.description }}">
     <meta property="og:image" content="{{ site.data.settings.og_image | image_path }}">
-    <meta property="twitter:site" content="{{ site.data.settings.twitter_username }}">
-    <meta property="twitter:url" content="{{ site.data.settings.twitter_url }}">
-    <meta property="twitter:title" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.data.settings.url }}">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:description" content="{{ site.data.settings.description | truncate: 180 }}">
-    <meta property="twitter:image:src" content="{{ site.data.settings.twitter_image | image_path }}">
 
     <!-- icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% asset_path 'apple-touch-icon-180x180.png' %}" />
