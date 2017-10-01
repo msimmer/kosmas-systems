@@ -1,0 +1,40 @@
+{% assign navigation = site.collections | where: 'navigation', true %}
+{% assign navigation = navigation | reverse %}
+
+<div class="product__grid">
+
+    {% for collection in navigation %}
+        {% if collection.docs.size > 0 %}
+            {% for entry in site[collection.label] %}
+                {% if entry.thumbnail %}
+                    <a class="product__grid__thumbnail" href="{{ entry.url }}" title="{{ entry.title }}">
+                        <div class="product__item__image">
+                            <img src="{{ entry.thumbnail | image_path }}" alt="{{ entry.title }}">
+                        </div>
+
+                        <div class="product__item__details">
+                            <h1 class="product__item__title">{{ entry.title }}</h1>
+
+                            {% assign in_stock = entry.in_stock | plus: 0 %}
+                            {% if in_stock > 0 %}
+                                {% assign cost = entry.cost | plus: 0 %}
+                                <div class="product__item__cost">{{ cost | currency }}</div>
+                            {% else %}
+                                <div class="product__item__cost">&nbsp;</div>
+                                <div class="product__item__sold-out">
+                                    <strong>Sold out!</strong>
+                                </div>
+                            {% endif %}
+
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+
+</div>
+
+<script>
+window.ksms = window.ksms || {}
+</script>

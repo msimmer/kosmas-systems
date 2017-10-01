@@ -53,7 +53,7 @@ exclude:
   - Rakefile
   - bower.json
 
-# jekyll-assetsZZ settings
+# jekyll-assets settings
 assets:
   compress:
     js: uglifier
