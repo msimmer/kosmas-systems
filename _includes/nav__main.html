@@ -2,20 +2,23 @@
 {% assign navigation = site.collections | where: 'navigation', true %}
 {% assign navigation = navigation | reverse %}
 
-<nav class="nav__products">
+<nav class="nav__main">
     <button class="nav__toggle">
         <span class="nav__indicator">+</span>
     </button>
 
-    <div class="nav__products__container">
+    <div class="nav__main__container">
+        <h2 class="nav__title">
+            <a href="/">Kosmas Systems</a>
+        </h2>
         {% for collection in navigation %}
             {% if collection.docs.size > 0 %}
-                <h2 class="product__title">{{ collection.display_name }}</h2>
-                <ul class="product__list">
+                <h2 class="nav__title">{{ collection.display_name }}</h2>
+                <ul class="nav__list">
                     {% for entry in site[collection.label] %}
-                        <li class="product__list__item">
+                        <li class="nav__list__item">
                             <a
-                                class="product__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
+                                class="nav__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
                                 href="{{ entry.url }}"
                             >{{ entry.title }}</a>
                         </li>
@@ -23,5 +26,8 @@
                 </ul>
             {% endif %}
         {% endfor %}
+        <h2 class="nav__title nav__title--fixed">
+            <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        </h2>
     </div>
 </nav>

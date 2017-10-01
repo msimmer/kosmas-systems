@@ -2,7 +2,7 @@
 $(function() {
     $('.nav__toggle').on('click', function() {
         $(this).toggleClass('open')
-        $(this).closest('.nav__products').toggleClass('open')
+        $(this).closest('.nav__main').toggleClass('open')
     })
 
     if (window.ksms && window.ksms.slider) {
@@ -18,4 +18,5 @@ $(function() {
 
         images.eq(index).show()
     }
+
 })
