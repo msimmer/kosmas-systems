@@ -405,9 +405,17 @@ footer {
         width: 100%;
 
         img {
-            max-height: calc(100vh - #{$large-height + $v-unit});
+
+            @media #{$screen-large} {
+                max-height: calc(100vh - #{$large-height + $v-unit});
+                max-width: calc(100% - #{$small-width});
+            }
+            @media #{$screen-small} {
+                max-height: 100%;
+                max-width: 100%;
+            }
+
             height: auto;
-            max-width: calc(100% - #{$small-width});
             width: 100%;
             object-fit: contain;
             object-position: left;
