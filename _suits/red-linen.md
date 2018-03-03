@@ -2,7 +2,7 @@
 title: Red Linen
 date: 2018-03-03T14:05:52.815Z
 thumbnail: /images/uploads/linen-red-suit.jpg
-cost: '3500'
+cost: '35000'
 in_stock: '0'
 layout: product
 gallery:
@@ -11,3 +11,4 @@ gallery:
 paypal: null
 ---
 Superlight Linen
+
