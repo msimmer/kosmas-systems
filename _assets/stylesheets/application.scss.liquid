@@ -32,8 +32,9 @@ body {
     color: $black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    @media #{$screen-large} {
-        padding-top: $large-height;
+
+    @media #{$screen-small} {
+        padding-top: $medium-height;
     }
 }
 
@@ -63,7 +64,7 @@ button {
     outline: none;
 }
 
-h1,h2,h3,h4,h5,h6,p,label{
+h1,h2,h3,h4,h5,h6,p,label {
     margin-top: 0;
     margin-top: 1rem;
 }
@@ -91,24 +92,20 @@ a, a:link, a:visited, a:hover, a:active {
 
 
 .site__header {
-    height: $large-height;
-
-    @media #{$screen-large} {
-        position: fixed;
-        width: 100%;
-        z-index: 1;
-        top: 0;
+    h1 {
+        margin-left: $small-width;
+        margin-top: 0;
+        margin-bottom: 0;
     }
-
-    .logo__container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $black;
-        background-size: contain;
-        background-repeat: repeat-x;
+    @media #{$screen-large} {
+        h1 {
+            font-size: 88px;
+        }
+    }
+    @media #{$screen-small} {
+        h1 {
+            font-size: 28px;
+        }
     }
 }
 
@@ -133,7 +130,6 @@ nav.nav__main {
 
     .nav__main__container {
         @media #{$screen-large} {
-            position: fixed;
             width: 200px;
         }
 
@@ -141,6 +137,13 @@ nav.nav__main {
             height: 100vh;
             background-color: lightgrey;
             margin: $medium-height 0 0;
+        }
+    }
+
+    .nav__main__container--fixed {
+        @media #{$screen-large} {
+            position: fixed;
+            top: 0;
         }
     }
 
@@ -210,8 +213,8 @@ nav.nav__main {
     @media #{$screen-small} {
         width: 100%;
         height: $medium-height;
-        position: absolute;
-        top: $large-height;
+        position: fixed;
+        top: 0;
         background-color: $red;
 
 
@@ -288,12 +291,6 @@ main {
     flex: 1;
     display: flex;
     flex-flow: row wrap;
-    // background: beige;
-
-    @media #{$screen-small} {
-        padding-top: $medium-height;
-    }
-
 }
 
 article {
@@ -364,6 +361,7 @@ footer {
 }
 
 .product__grid__thumbnail {
+    height: calc(100vh - #{$large-height + $v-unit});
     display: flex;
     flex-direction: column;
     flex: 1 0 50%;
@@ -379,19 +377,21 @@ footer {
     }
 
     .product__item__image {
-        height: 100vh;
-        @media #{$screen-small} {
-            height: auto;
-        }
+        height: calc(100% - #{$large-width});
+        width: 100%;
+
         img {
             max-height: 100%;
             max-width: 100%;
             height: 100%;
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
     .product__item__details {
+
+        height: $large-height;
+
         flex: 1;
         @media #{$screen-small} {
             padding: 0 $h-unit $v-unit * 1.5;
@@ -410,6 +410,16 @@ footer {
     &:nth-child(2) {
         .product__item__sold-out {
             top: $v-unit / 2;
+        }
+    }
+}
+
+
+// product page
+.gallery__entry {
+    @media #{$screen-large} {
+        img {
+            max-height: calc(100vh - #{$large-height + $medium-height + $v-unit});
         }
     }
 }

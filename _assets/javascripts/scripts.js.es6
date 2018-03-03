@@ -1,4 +1,6 @@
 
+var MOBILE_SCREEN_WIDTH = 600
+
 $(function() {
     $('.nav__toggle').on('click', function() {
         $(this).toggleClass('open')
@@ -18,5 +20,32 @@ $(function() {
 
         images.eq(index).show()
     }
+
+
+    // nav scroll
+    var sidebar = $('.nav__main__container')
+    var fixedSidebarClassName = 'nav__main__container--fixed'
+    function isMobile() {
+        return window.innerWidth <= MOBILE_SCREEN_WIDTH
+    }
+    function updateSidebarPosition() {
+        var headerHeight = $('.site__header').height()
+        if ($(window).scrollTop() > headerHeight) {
+            console.log('--- yes')
+            sidebar.addClass(fixedSidebarClassName)
+            return
+        }
+
+        sidebar.removeClass(fixedSidebarClassName)
+
+    }
+    function resetSidebarPosition() {
+        sidebar.removeClass(fixedSidebarClassName)
+    }
+
+    $(window).on('scroll', function() {
+        if (isMobile()) return resetSidebarPosition()
+        updateSidebarPosition()
+    })
 
 })

@@ -1,4 +1,3 @@
-
 {% assign navigation = site.collections | where: 'navigation', true %}
 {% assign navigation = navigation | reverse %}
 
@@ -8,9 +7,6 @@
     </button>
 
     <div class="nav__main__container">
-        <h2 class="nav__title">
-            <a href="/">Kosmas Systems</a>
-        </h2>
         {% for collection in navigation %}
             {% if collection.docs.size > 0 %}
                 <h2 class="nav__title">{{ collection.display_name }}</h2>
