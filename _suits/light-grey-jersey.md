@@ -12,7 +12,6 @@ paypal: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\
 ---
 100% Organic Jersey
 
-Inside Jacket
+Inside Jacket Pocket
 
-Pocket
 Seat Pocket
