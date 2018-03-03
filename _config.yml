@@ -40,7 +40,6 @@ plugins:
 include:
   - 'fonts'
   - 'images'
-  - '_pages'
 
 exclude:
   - Gemfile
@@ -52,6 +51,7 @@ exclude:
   - CNAME
   - Rakefile
   - bower.json
+  - node_modules
 
 # jekyll-assets settings
 assets:
