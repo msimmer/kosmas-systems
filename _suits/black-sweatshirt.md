@@ -2,7 +2,7 @@
 title: Black Jersey
 date: 2018-03-03T14:00:49.832Z
 thumbnail: /images/uploads/black-sweatshirt-suit.jpg
-cost: '2500'
+cost: '25000'
 in_stock: '1'
 layout: product
 gallery:
@@ -15,3 +15,4 @@ Organic 100% Cotton Jersey
 Inside Jacket Pocket
 
 Seat Pocket
+
