@@ -13,7 +13,7 @@
                         </div>
 
                         <div class="product__item__details">
-                            <h1 class="product__item__title">{{ entry.title }}</h1>
+                            <h2 class="product__item__title">{{ entry.title }}</h2>
 
                             {% assign in_stock = entry.in_stock | plus: 0 %}
                             {% if in_stock > 0 %}
@@ -21,9 +21,7 @@
                                 <div class="product__item__cost">{{ cost | currency }}</div>
                             {% else %}
                                 <div class="product__item__cost">&nbsp;</div>
-                                <div class="product__item__sold-out">
-                                    <strong>Sold out!</strong>
-                                </div>
+                                <div class="product__item__sold-out"></div>
                             {% endif %}
 
                         </div>

@@ -13,7 +13,7 @@
 
         <section class="purchase">
             {% assign in_stock = page.in_stock | plus: 0 %}
-            {% if in_stock %}
+            {% if in_stock > 0 %}
                 <div>{{ page.paypal }}</div>
             {% else %}
                 <strong>Sold out!</strong>

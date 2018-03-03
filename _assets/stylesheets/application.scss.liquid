@@ -103,9 +103,7 @@ a, a:link, a:visited, a:hover, a:active {
         }
     }
     @media #{$screen-small} {
-        h1 {
-            font-size: 28px;
-        }
+        display: none;
     }
 }
 
@@ -118,14 +116,36 @@ a, a:link, a:visited, a:hover, a:active {
     }
 }
 
+.purchase {}
+.content {
+    p {
+        margin-bottom: 0;
+        &:last-child {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
 nav.nav__main {
     position: relative;
     z-index: 1;
     width: 300px;
 
+    @media #{$screen-large} {
+        h1 {
+            display: none;
+        }
+    }
+
     @media #{$screen-small} {
-        width: 100%;
-        height: $medium-height;
+        h1 {
+            height: $medium-height + 10px;
+            position: absolute;
+            font-size: 28px;
+            margin: 0 0 0 $small-width;
+            display: flex;
+            align-items: center;
+        }
     }
 
     .nav__main__container {
@@ -135,8 +155,8 @@ nav.nav__main {
 
         @media #{$screen-small} {
             height: 100vh;
-            background-color: lightgrey;
-            margin: $medium-height 0 0;
+            background-color: $white;
+            margin: $medium-height + 10px 0 0;
         }
     }
 
@@ -212,10 +232,10 @@ nav.nav__main {
 nav.nav__main {
     @media #{$screen-small} {
         width: 100%;
-        height: $medium-height;
+        height: $medium-height + 10px;
         position: fixed;
         top: 0;
-        background-color: $red;
+        background-color: $white;
 
 
         .nav__title + .nav__title {
@@ -245,8 +265,8 @@ button.nav__toggle {
     display: none;
     position: absolute;
     right: 0;
-    height: $medium-height;
-    width: $medium-width;
+    height: $medium-height + 10px;
+    width: $medium-width + 10px;
     z-index: 1;
     align-items: baseline;
     justify-content: center;
@@ -256,7 +276,7 @@ button.nav__toggle {
     line-height: 0.3;
     background: transparent;
     transform-origin: 50% 50%;
-    color: $white;
+    color: $black;
 
     &:active {
         background-color: grey;
@@ -361,10 +381,10 @@ footer {
 }
 
 .product__grid__thumbnail {
-    height: calc(100vh - #{$large-height + $v-unit});
+    // height: calc(100vh - #{$large-height + $v-unit});
     display: flex;
     flex-direction: column;
-    flex: 1 0 50%;
+    flex: 0 0 50%;
     position: relative;
 
 
@@ -373,19 +393,20 @@ footer {
     }
 
     @media #{$screen-small} {
+        height: auto;
         flex: 1 0 100%;
     }
 
     .product__item__image {
-        height: calc(100% - #{$large-width});
         width: 100%;
 
         img {
-            max-height: 100%;
-            max-width: 100%;
-            height: 100%;
+            max-height: calc(100vh - #{$large-height + $v-unit});
+            height: auto;
+            max-width: calc(100% - #{$small-width});
             width: 100%;
             object-fit: contain;
+            object-position: left;
         }
     }
     .product__item__details {
@@ -398,12 +419,21 @@ footer {
         }
     }
 
+    .product__item__title {
+        margin-bottom: 0.25rem;
+    }
+
     .product__item__sold-out {
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent url(sold-out.png);
         position: absolute;
-        right: $h-unit / 2;
-        top: $v-unit / 2 * -1;
-        background: red;
-        padding: $v-unit / 2 $h-unit;
+        background-repeat: no-repeat;
+        background-size: 180px;
+        background-position: 0 20%;
     }
 
     &:nth-child(1),
