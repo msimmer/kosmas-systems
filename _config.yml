@@ -99,6 +99,12 @@ collections:
     output: true
     permalink: /tyrant/:path/
     navigation: true
+  suits:
+    display_name: "Suits"
+    singular_name: "Suit"
+    output: true
+    permalink: /suits/:path/
+    navigation: true
   furniture:
     display_name: "Furniture"
     singular_name: "Furniture"
