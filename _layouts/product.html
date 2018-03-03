@@ -29,7 +29,12 @@
             {% if page.gallery != empty and page.gallery.size > 0 %}
                 {% for entry in page.gallery %}
                     <figure class="gallery__entry">
-                        <img alt="{% if entry.alt != '' %}{{ entry.alt }}{% else %}{{ entry.image | remove:'/images/uploads/' }}{% endif %}" src="{{ entry.image }}" />
+                        <a href="{{ entry.image }}" target="_blank">
+                                <img
+                                    alt="{% if entry.alt != '' %}{{ entry.alt }}{% else %}{{ entry.image | remove:'/images/uploads/' }}{% endif %}"
+                                    src="{{ entry.image }}"
+                                />
+                        </a>
                     </figure>
                     {% if entry.description %}
                         <figcaption>
