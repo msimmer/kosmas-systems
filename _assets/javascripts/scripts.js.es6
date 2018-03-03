@@ -31,7 +31,6 @@ $(function() {
     function updateSidebarPosition() {
         var headerHeight = $('.site__header').height()
         if ($(window).scrollTop() > headerHeight) {
-            console.log('--- yes')
             sidebar.addClass(fixedSidebarClassName)
             return
         }
