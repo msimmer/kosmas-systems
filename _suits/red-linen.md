@@ -10,7 +10,8 @@ gallery:
   - image: /images/uploads/linen-red-suit-back.jpg
 paypal: null
 ---
-Light Red Linen
+Light Linen
+
 
 
 
