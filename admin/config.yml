@@ -111,7 +111,6 @@ collections:
           - {label: "Site URL", name: url, widget: string, default: 'https://example.com'}
           - {label: "Logo", name: logo, widget: image}
           - {label: "OG Image", name: og_image, widget: image}
-          - {label: "Google Analytics Tracking Code", name: google_analytics_tracking_code, widget: string}
           - {label: "Google Analytics Site Verification", name: google_analytics_site_verification, widget: string}
 
 
