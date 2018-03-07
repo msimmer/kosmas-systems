@@ -14,7 +14,8 @@ paypal: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\
 ---
 Heavy Cotton Denim 
 
-Jacket and Pants Can be Purchased Separately  
+Jacket and Pants May be Purchased Separately  
+
 
 
 
