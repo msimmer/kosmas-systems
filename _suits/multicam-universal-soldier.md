@@ -2,7 +2,7 @@
 title: Multicam / Universal Soldier
 date: 2018-03-03T14:29:25.223Z
 thumbnail: /images/uploads/camo-suit.jpg
-cost: '65000'
+cost: '64900'
 in_stock: '1'
 layout: product
 gallery:
@@ -15,6 +15,7 @@ paypal: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\
 Crye Precision Nylon Ripstop Multicam
  
 Jacket and Pants Can be Purchased Separately  
+
 
 
 
