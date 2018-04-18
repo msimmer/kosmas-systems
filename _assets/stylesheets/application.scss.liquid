@@ -39,9 +39,12 @@ body {
 }
 
 
-h1,h2,h3,h4,h5,h6,ul,ol,li,p,label,input,textarea,button {
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6,
+ul,ol,li,p,label,input,textarea,button {
     font-family: $font-family;
     font-size: $font-size;
+    font-weight: 700;
     text-indent: 0;
     text-align: left;
 }
@@ -64,7 +67,9 @@ button {
     outline: none;
 }
 
-h1,h2,h3,h4,h5,h6,p,label {
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6,
+p,label {
     margin-top: 0;
     margin-top: 1rem;
 }
@@ -173,17 +178,16 @@ nav.nav__main {
     .nav__title {
         margin-left: $small-width;
 
-        @media #{$screen-large} {
-            &.nav__title--fixed {
-                position: fixed;
-                bottom: 0;
-            }
-        }
+        // @media #{$screen-large} {
+        //     &.nav__title--fixed {
+        //         position: fixed;
+        //         bottom: 0;
+        //     }
+        // }
         @media #{$screen-small} {
             padding-top: $font-size;
             margin: 0 0 $font-size $small-width;
         }
-
     }
 
     ul.nav__list {
