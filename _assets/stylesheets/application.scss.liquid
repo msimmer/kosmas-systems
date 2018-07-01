@@ -444,12 +444,38 @@ footer {
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0;
-        background: transparent url({{ 'sold-out.png' | asset_path }});
+        bottom: 20%;
         position: absolute;
-        background-repeat: no-repeat;
-        background-size: 180px;
-        background-position: 0 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-style: italic;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 4.5vw;
+        font-weight: bold;
+
+        -webkit-text-stroke: 1px $white;
+        -moz-text-stroke: 1px $white;
+        -ms-text-stroke: 1px $white;
+        -o-text-stroke: 1px $white;
+        text-stroke: 1px $white;
+
+        @media #{$screen-small} {
+            font-size: 17vw;
+            justify-content: center;
+        }
+
+        // pointer-events: none;
+        // top: 0;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        // background: transparent url({{ 'sold-out.png' | asset_path }});
+        // position: absolute;
+        // background-repeat: no-repeat;
+        // background-size: 65%;
+        // background-position: 0 40%;
     }
 
     &:nth-child(1),
