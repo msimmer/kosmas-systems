@@ -111,6 +111,12 @@ collections:
     output: true
     permalink: /furniture/:path/
     navigation: true
+  jackets:
+    display_name: "Jackets"
+    singular_name: "Jacket"
+    output: true
+    permalink: /jackets/:path/
+    navigation: true
   pages:
     display_name: "Pages"
     singular_name: "Page"
@@ -127,6 +133,12 @@ furniture:
   template: _tmpl/product.yml
   extension: md
   dir: _furniture
+
+jackets:
+  collection: jackets
+  template: _tmpl/product.yml
+  extension: md
+  dir: _jackets
 
 pages:
   collection: pages
