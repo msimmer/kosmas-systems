@@ -1,6 +1,7 @@
 ---
 title: 'Tyrant Sport '
 date: 2018-03-03T13:33:14.772Z
+featured: false
 thumbnail: /images/uploads/tyrant-sport.jpg
 cost: '4000'
 in_stock: '1'

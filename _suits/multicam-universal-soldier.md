@@ -1,6 +1,7 @@
 ---
 title: Multicam / Universal Soldier
 date: 2018-03-03T14:29:25.223Z
+featured: false
 thumbnail: /images/uploads/camo-suit.jpg
 cost: '64900'
 in_stock: '1'

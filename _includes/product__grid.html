@@ -4,7 +4,7 @@
 
     {% for collection in navigation %}
         {% if collection.docs.size > 0 %}
-            {% assign entries = site[collection.label] | sort: 'date' | reverse %}
+            {% assign entries = site[collection.label] | sort_products %}
             {% for entry in entries %}
                 {% if entry.thumbnail %}
                     <a class="product__grid__thumbnail" href="{{ entry.url }}" title="{{ entry.title }}">

@@ -1,6 +1,7 @@
 ---
 title: Dark Grey Jersey
 date: 2018-03-03T14:10:27.936Z
+featured: false
 thumbnail: /images/uploads/grey-sweatshirt-suit.jpg
 cost: '25000'
 in_stock: '1'

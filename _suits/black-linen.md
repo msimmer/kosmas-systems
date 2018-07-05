@@ -1,6 +1,7 @@
 ---
 title: Black Linen
 date: 2018-03-03T13:59:07.252Z
+featured: false
 thumbnail: /images/uploads/linen-suit.jpg
 cost: '25000'
 in_stock: '1'

@@ -1,6 +1,7 @@
 ---
 title: Think
 date: 2018-04-02T08:36:59.631Z
+featured: false
 thumbnail: /images/uploads/think-shirt.jpg
 cost: '4000'
 in_stock: '1'

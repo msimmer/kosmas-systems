@@ -1,6 +1,7 @@
 ---
 title: Give Up Your Fear
 date: 2018-03-03T13:46:24.726Z
+featured: false
 thumbnail: /images/uploads/tyrant-fear.jpg
 cost: '4000'
 in_stock: '0'

@@ -1,6 +1,7 @@
 ---
 title: Black Jersey
 date: 2018-03-03T14:00:49.832Z
+featured: false
 thumbnail: /images/uploads/black-sweatshirt-suit.jpg
 cost: '25000'
 in_stock: '1'

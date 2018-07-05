@@ -1,6 +1,7 @@
 ---
 title: 'Pain Is The #1 Teacher'
 date: 2018-03-03T13:30:29.789Z
+featured: false
 thumbnail: /images/uploads/pain-t-shirt.jpg
 cost: '4000'
 in_stock: '1'

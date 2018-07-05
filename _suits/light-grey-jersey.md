@@ -1,6 +1,7 @@
 ---
 title: Light Grey Jersey
 date: 2018-03-03T14:09:05.115Z
+featured: false
 thumbnail: /images/uploads/light-grey-sweatshirt-suit.jpg
 cost: '25000'
 in_stock: '1'

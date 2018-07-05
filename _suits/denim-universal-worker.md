@@ -1,6 +1,7 @@
 ---
 title: Denim / Universal Worker
 date: 2018-03-03T14:35:17.843Z
+featured: false
 thumbnail: /images/uploads/denim-suit.jpg
 cost: '64900'
 in_stock: '1'

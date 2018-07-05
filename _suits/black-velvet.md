@@ -1,6 +1,7 @@
 ---
 title: Black Velvet
 date: 2018-03-03T13:56:53.838Z
+featured: false
 thumbnail: /images/uploads/velvet-suit.jpg
 cost: '28000'
 in_stock: '1'

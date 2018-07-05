@@ -36,6 +36,7 @@ plugins:
   - jekyll-assets
   - uglifier
   - ./_filters/currency
+  - ./_filters/products
 
 include:
   - 'fonts'

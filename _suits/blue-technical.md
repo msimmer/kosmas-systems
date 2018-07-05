@@ -1,6 +1,7 @@
 ---
 title: Blue Technical
 date: 2018-03-03T14:04:33.429Z
+featured: false
 thumbnail: /images/uploads/blue-suit.jpg
 cost: '25000'
 in_stock: '1'

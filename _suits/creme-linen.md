@@ -1,6 +1,7 @@
 ---
 title: Creme Linen
 date: 2018-03-03T14:02:54.763Z
+featured: false
 thumbnail: /images/uploads/beige-linen-suit.jpg
 cost: '25000'
 in_stock: '1'

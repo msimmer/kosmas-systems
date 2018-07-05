@@ -1,6 +1,7 @@
 ---
 title: Stages Of Grief
 date: 2018-03-03T13:31:57.613Z
+featured: false
 thumbnail: /images/uploads/denial-shirt.jpg
 cost: '4000'
 in_stock: '1'

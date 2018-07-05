@@ -1,6 +1,7 @@
 ---
 title: Black Cotton Twill
 date: 2018-03-03T14:27:36.056Z
+featured: false
 thumbnail: /images/uploads/twill-suit.jpg
 cost: '25000'
 in_stock: '1'

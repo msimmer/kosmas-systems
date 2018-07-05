@@ -1,6 +1,7 @@
 ---
 title: Trinity
 date: 2018-07-05T09:50:54.287Z
+featured: false
 thumbnail: /images/uploads/trinity-front-flash-too-red.jpg
 cost: '6500'
 in_stock: '1'
