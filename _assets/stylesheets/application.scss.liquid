@@ -15,7 +15,6 @@ $medium-width: $large-width / 2;
 $small-width: $large-width / 4;
 
 $screen-small: "only screen and (max-width : 600px)";
-// $screen-medium: "only screen and (min-width : 320px) and (max-width : 680px)";
 $screen-large: "only screen and (min-width : 600px)";
 
 
@@ -177,13 +176,6 @@ nav.nav__main {
 
     .nav__title {
         margin-left: $small-width;
-
-        // @media #{$screen-large} {
-        //     &.nav__title--fixed {
-        //         position: fixed;
-        //         bottom: 0;
-        //     }
-        // }
         @media #{$screen-small} {
             padding-top: $font-size;
             margin: 0 0 $font-size $small-width;
@@ -389,7 +381,6 @@ footer {
 }
 
 .product__grid__thumbnail {
-    // height: calc(100vh - #{$large-height + $v-unit});
     display: flex;
     flex-direction: column;
     flex: 0 0 50%;
@@ -466,16 +457,6 @@ footer {
             justify-content: center;
         }
 
-        // pointer-events: none;
-        // top: 0;
-        // left: 0;
-        // right: 0;
-        // bottom: 0;
-        // background: transparent url({{ 'sold-out.png' | asset_path }});
-        // position: absolute;
-        // background-repeat: no-repeat;
-        // background-size: 65%;
-        // background-position: 0 40%;
     }
 
     &:nth-child(1),
