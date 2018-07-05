@@ -1,6 +1,7 @@
 ---
 title: Blue Reflective Jacket
 date: 2018-07-05T11:33:52.161Z
+featured: false
 thumbnail: /images/uploads/blue-jacket-half.jpg
 cost: '32000'
 in_stock: '0'
