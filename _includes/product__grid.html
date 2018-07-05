@@ -1,11 +1,11 @@
-{% assign navigation = site.collections | where: 'navigation', true %}
-{% assign navigation = navigation | reverse %}
+{% assign navigation = site.collections | where: 'navigation', true | reverse %}
 
 <div class="product__grid">
 
     {% for collection in navigation %}
         {% if collection.docs.size > 0 %}
-            {% for entry in site[collection.label] %}
+            {% assign entries = site[collection.label] | sort: 'date' | reverse %}
+            {% for entry in entries %}
                 {% if entry.thumbnail %}
                     <a class="product__grid__thumbnail" href="{{ entry.url }}" title="{{ entry.title }}">
                         <div class="product__item__image">

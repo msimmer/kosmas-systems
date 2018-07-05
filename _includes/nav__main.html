@@ -1,5 +1,4 @@
-{% assign navigation = site.collections | where: 'navigation', true %}
-{% assign navigation = navigation | reverse %}
+{% assign navigation = site.collections | where: 'navigation', true | reverse %}
 
 <nav class="nav__main">
     <h1>
@@ -14,7 +13,8 @@
             {% if collection.docs.size > 0 %}
                 <h2 class="nav__title">{{ collection.display_name }}</h2>
                 <ul class="nav__list">
-                    {% for entry in site[collection.label] %}
+                    {% assign entries = site[collection.label] | sort: 'date' | reverse %}
+                    {% for entry in entries %}
                         <li class="nav__list__item">
                             <a
                                 class="nav__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
