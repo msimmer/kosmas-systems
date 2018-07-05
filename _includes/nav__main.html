@@ -1,4 +1,4 @@
-{% assign navigation = site.collections | where: 'navigation', true | reverse %}
+{% assign navigation = site.collections | where: 'navigation', true | sort: 'navigation_index' %}
 
 <nav class="nav__main">
     <h1>

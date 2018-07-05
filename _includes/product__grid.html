@@ -1,31 +1,27 @@
-{% assign navigation = site.collections | where: 'navigation', true | reverse %}
+{% assign navigation = site.collections | where: 'navigation', true | sort: 'navigation_index' %}
 
 <div class="product__grid">
+
+        {% for collection in navigation %}
+        {% if collection.docs.size > 0 %}
+            {% assign entries = site[collection.label] | sort_products %}
+            {% for entry in entries %}
+                {% if entry.featured && entry.thumbnail %}
+                    {% include product__grid__item.html %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+
+
+
 
     {% for collection in navigation %}
         {% if collection.docs.size > 0 %}
             {% assign entries = site[collection.label] | sort_products %}
             {% for entry in entries %}
-                {% if entry.thumbnail %}
-                    <a class="product__grid__thumbnail" href="{{ entry.url }}" title="{{ entry.title }}">
-                        <div class="product__item__image">
-                            <img src="{{ entry.thumbnail | image_path }}" alt="{{ entry.title }}">
-                        </div>
-
-                        <div class="product__item__details">
-                            <h2 class="product__item__title">{{ entry.title }}</h2>
-
-                            {% assign in_stock = entry.in_stock | plus: 0 %}
-                            {% if in_stock > 0 %}
-                                {% assign cost = entry.cost | plus: 0 %}
-                                <div class="product__item__cost">{{ cost | currency }}</div>
-                            {% else %}
-                                <div class="product__item__cost">&nbsp;</div>
-                                <div class="product__item__sold-out">Sold Out</div>
-                            {% endif %}
-
-                        </div>
-                    </a>
+                {% if entry.featured == false && entry.thumbnail %}
+                    {% include product__grid__item.html %}
                 {% endif %}
             {% endfor %}
         {% endif %}

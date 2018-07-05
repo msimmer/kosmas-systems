@@ -1,0 +1,19 @@
+<a class="product__grid__thumbnail" href="{{ entry.url }}" title="{{ entry.title }}">
+    <div class="product__item__image">
+        <img src="{{ entry.thumbnail | image_path }}" alt="{{ entry.title }}">
+    </div>
+
+    <div class="product__item__details">
+        <h2 class="product__item__title">{{ entry.title }}</h2>
+
+        {% assign in_stock = entry.in_stock | plus: 0 %}
+        {% if in_stock > 0 %}
+            {% assign cost = entry.cost | plus: 0 %}
+            <div class="product__item__cost">{{ cost | currency }}</div>
+        {% else %}
+            <div class="product__item__cost">&nbsp;</div>
+            <div class="product__item__sold-out">Sold Out</div>
+        {% endif %}
+
+    </div>
+</a>

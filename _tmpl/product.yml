@@ -1,6 +1,7 @@
 ---
 layout: product
 date:
+featured: false
 title:
 cost: 0
 in_stock: 0
