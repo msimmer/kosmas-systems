@@ -85,6 +85,33 @@ collections:
 
         - {label: "Paypal Button", name: paypal, widget: markdown, required: false}
 
+
+  - name: jackets
+    label: Jackets
+    folder: _jackets
+    create: true
+    slug: "{{slug}}"
+    card: {type: alltype, text: title}
+    fields:
+        - {label: Title, name: title, widget: string}
+        - {label: "Publish Date", name: date, widget: datetime}
+        - {label: Featured Image, name: thumbnail, widget: image}
+        - {label: Body, name: body, widget: markdown, required: false}
+
+        - {label: Cost, name: cost, widget: number}
+        - {label: Stock, name: in_stock, widget: number}
+        - {label: Layout, name: layout, widget: hidden, default: product}
+
+        - name: gallery
+          label: "Gallery Image"
+          widget: list
+          fields:
+              - {label: "Alt Tag", name: alt, widget: string}
+              - {label: Description, name: description, widget: string}
+              - {label: Image, name: image, widget: image}
+
+        - {label: "Paypal Button", name: paypal, widget: markdown, required: false}
+
   - name: pages
     label: Pages
     folder: _pages
