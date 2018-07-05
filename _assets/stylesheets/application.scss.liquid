@@ -402,8 +402,14 @@ footer {
         img {
 
             @media #{$screen-large} {
+
                 max-height: calc(100vh - #{$large-height + $v-unit});
                 max-width: calc(100% - #{$small-width});
+
+                body.home & {
+                    max-height: none;
+                    max-width: calc(100% - #{$small-width});
+                }
             }
             @media #{$screen-small} {
                 max-height: 100%;
@@ -414,6 +420,11 @@ footer {
             width: 100%;
             object-fit: contain;
             object-position: left;
+
+            body.home & {
+                object-position: center;
+            }
+
         }
     }
     .product__item__details {
