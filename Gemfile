@@ -17,6 +17,7 @@ gem "minima", "~> 2.0"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 
+gem 'sprockets', '~> 3.7.2'
 gem 'jekyll-assets'
 gem 'autoprefixer-rails'
 gem 'sprockets-es6'
