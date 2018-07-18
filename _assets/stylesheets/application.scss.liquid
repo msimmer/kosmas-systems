@@ -450,22 +450,12 @@ footer {
         position: absolute;
         display: flex;
         align-items: center;
-        justify-content: center;
-        text-transform: uppercase;
-        font-style: italic;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 4.5vw;
-        font-weight: bold;
 
-        -webkit-text-stroke: 1px $white;
-        -moz-text-stroke: 1px $white;
-        -ms-text-stroke: 1px $white;
-        -o-text-stroke: 1px $white;
-        text-stroke: 1px $white;
+        background: transparent asset_url('sold-out.png') no-repeat center;
+        background-size: 25vw;
 
         @media #{$screen-small} {
-            font-size: 17vw;
-            justify-content: center;
+            background-size: 70vw;
         }
 
     }
