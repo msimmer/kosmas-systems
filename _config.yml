@@ -85,10 +85,10 @@ assets:
 
   sources:
     - _assets/css
+    - _assets/fonts
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-    - _assets/fonts
     - _assets/images
     - _vendor
 

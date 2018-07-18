@@ -17,23 +17,23 @@
     <meta property="og:image" content="{{ site.data.settings.og_image | image_path }}">
 
     <!-- icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{% asset_path 'apple-touch-icon-180x180.png' %}" />
-    <link rel="apple-touch-icon" sizes="120x120" href="{% asset_path 'apple-touch-icon-120x120.png' %}" />
-    <link rel="apple-touch-icon" sizes="167x167" href="{% asset_path 'apple-touch-icon-167x167.png' %}" />
-    <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path 'apple-touch-icon-152x152.png' %}" />
-    <link rel="apple-touch-icon" sizes="57x57" href="{% asset_path 'apple-touch-icon-57x57.png' %}" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{% asset_path 'apple-touch-icon-76x76.png' %}" />
-    <link rel="icon" type="image/png" sizes="196x196" href="{% asset_path 'favicon-196x196.png' %}" />
-    <link rel="icon" type="image/png" sizes="160x160" href="{% asset_path 'favicon-160x160.png' %}" />
-    <link rel="icon" type="image/png" sizes="96x96" href="{% asset_path 'favicon-96x96.png' %}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{% asset_path 'favicon-32x32.png' %}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{% asset_path 'favicon-16x16.png' %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% asset 'apple-touch-icon-180x180.png' @path %}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{% asset 'apple-touch-icon-120x120.png' @path %}" />
+    <link rel="apple-touch-icon" sizes="167x167" href="{% asset 'apple-touch-icon-167x167.png' @path %}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{% asset 'apple-touch-icon-152x152.png' @path %}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{% asset 'apple-touch-icon-57x57.png' @path %}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{% asset 'apple-touch-icon-76x76.png' @path %}" />
+    <link rel="icon" type="image/png" sizes="196x196" href="{% asset 'favicon-196x196.png' @path %}" />
+    <link rel="icon" type="image/png" sizes="160x160" href="{% asset 'favicon-160x160.png' @path %}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{% asset 'favicon-96x96.png' @path %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% asset 'favicon-32x32.png' @path %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% asset 'favicon-16x16.png' @path %}" />
     <link name="msapplication-TileColor" content="#ffffff" />
-    <link name="msapplication-TileImage" content="{% asset_path 'mstile-144x144.png' | image  %}" />
+    <link name="msapplication-TileImage" content="{% asset 'mstile-144x144.png' @path %}" />
 
     <link rel="canonical" href="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | prepend: site.data.settings.url }}">
 
-    {% stylesheet application.css %}
+    {% asset application.css %}
 
 </head>
 <body class="{{ page.layout }}{% if page.slug %} {{ page.layout }}__{{ page.slug }}{% endif %}">
