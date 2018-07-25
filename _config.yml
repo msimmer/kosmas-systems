@@ -56,7 +56,7 @@ exclude:
 
 # jekyll-assets settings
 assets:
-  compress:
+  compression:
     js: uglifier
   js_compressor: babel
   css_compressor: sass
@@ -69,6 +69,11 @@ assets:
     - 'application.js'
     - '*.png'
     - '*.jpg'
+
+  defaults:
+    js: { integrity: false } # breaks everything if 'true'
+    css: { integrity: false } # breaks everything if 'true'
+    img: { integrity: false } # breaks everything if 'true'
 
 
   autowrite: true
