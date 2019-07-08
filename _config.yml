@@ -120,20 +120,6 @@ collections:
     permalink: /tyrant/:path/
     fashion: true
     navigation_index: 0
-  suits:
-    display_name: "Suits"
-    singular_name: "Suit"
-    output: true
-    permalink: /suits/:path/
-    fashion: true
-    navigation_index: 2
-  furniture:
-    display_name: "Furniture"
-    singular_name: "Furniture"
-    output: true
-    permalink: /furniture/:path/
-    fashion: true
-    navigation_index: 3
   jackets:
     display_name: "Jackets"
     singular_name: "Jacket"
@@ -141,6 +127,20 @@ collections:
     permalink: /jackets/:path/
     fashion: true
     navigation_index: 1
+  suits:
+    display_name: "Suits"
+    singular_name: "Suit"
+    output: true
+    permalink: /suits/:path/
+    fashion: true
+    navigation_index: 2
+  ks1:
+    display_name: "KS1"
+    singular_name: "KS1"
+    output: true
+    permalink: /ks1/:path/
+    fashion: true
+    navigation_index: 3
   artworks:
     display_name: "Art"
     singular_name: "Art"
@@ -167,6 +167,12 @@ jackets:
   template: _tmpl/product.yml
   extension: md
   dir: _jackets
+
+ks1:
+  collection: ks1
+  template: _tmpl/product.yml
+  extension: md
+  dir: _ks1
 
 pages:
   collection: pages
