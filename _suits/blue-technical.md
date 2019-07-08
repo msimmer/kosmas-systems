@@ -6,6 +6,7 @@ thumbnail: /images/uploads/blue-suit.jpg
 cost: '25000'
 in_stock: '1'
 layout: product
+available: false
 gallery:
   - image: /images/uploads/blue-suit.jpg
   - image: /images/uploads/blue-suit-back.jpg

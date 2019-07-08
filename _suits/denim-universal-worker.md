@@ -6,6 +6,7 @@ thumbnail: /images/uploads/denim-suit.jpg
 cost: '64900'
 in_stock: '1'
 layout: product
+available: false
 gallery:
   - image: /images/uploads/denim-suit.jpg
   - image: /images/uploads/denim-suit-back.jpg

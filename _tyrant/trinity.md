@@ -6,6 +6,7 @@ cost: '6500'
 in_stock: '0'
 featured: false
 layout: product
+available: false
 gallery:
   - image: /images/uploads/trinity-back-flash.jpg
   - image: /images/uploads/trinity-front.jpg

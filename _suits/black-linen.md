@@ -6,6 +6,7 @@ thumbnail: /images/uploads/linen-suit.jpg
 cost: '25000'
 in_stock: '1'
 layout: product
+available: false
 gallery:
   - image: /images/uploads/linen-suit.jpg
   - image: /images/uploads/linen-suit-back.jpg

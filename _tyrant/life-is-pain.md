@@ -6,6 +6,7 @@ cost: '5000'
 in_stock: '0'
 featured: false
 layout: product
+available: false
 gallery:
   - image: /images/uploads/life-is-pain.jpg
   - image: /images/uploads/life-is-pain-backside.jpg

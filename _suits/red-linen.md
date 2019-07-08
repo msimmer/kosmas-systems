@@ -6,6 +6,7 @@ thumbnail: /images/uploads/linen-red-suit.jpg
 cost: '35000'
 in_stock: '0'
 layout: product
+available: false
 gallery:
   - image: /images/uploads/linen-red-suit.jpg
   - image: /images/uploads/linen-red-suit-back.jpg

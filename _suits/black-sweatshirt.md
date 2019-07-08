@@ -6,6 +6,7 @@ thumbnail: /images/uploads/black-sweatshirt-suit.jpg
 cost: '25000'
 in_stock: '1'
 layout: product
+available: false
 gallery:
   - image: /images/uploads/black-sweatshirt-suit.jpg
   - image: /images/uploads/black-sweatshirt-suit-back.jpg

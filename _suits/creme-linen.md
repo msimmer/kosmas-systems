@@ -6,6 +6,7 @@ thumbnail: /images/uploads/beige-linen-suit.jpg
 cost: '25000'
 in_stock: '1'
 layout: product
+available: false
 gallery:
   - image: /images/uploads/beige-linen-suit.jpg
   - image: /images/uploads/beige-linen-suit-back.jpg

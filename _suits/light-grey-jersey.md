@@ -6,6 +6,7 @@ cost: '25000'
 in_stock: '0'
 featured: false
 layout: product
+available: false
 gallery:
   - image: /images/uploads/light-grey-sweatshirt-suit.jpg
   - image: /images/uploads/light-grey-sweatshirt-suit-back.jpg

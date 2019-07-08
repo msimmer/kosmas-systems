@@ -7,19 +7,22 @@
 
         <header class="article__header">
             <h1>{{ page.title }}</h1>
+            {% if entry.available %}
             {% assign cost = page.cost | plus: 0 %}
             <p>{{ cost | currency }}</p>
+            {% endif %}
         </header>
 
+        {% if entry.available %}
         <section class="purchase">
             {% assign in_stock = page.in_stock | plus: 0 %}
             {% if in_stock > 0 %}
-                <div>{{ page.paypal }}</div>
+            <div>{{ page.paypal }}</div>
             {% else %}
-                <strong>Sold out!</strong>
+            <strong>Sold out!</strong>
             {% endif %}
-
         </section>
+        {% endif %}
 
         <section class="content">
             {{ content }}
@@ -27,21 +30,19 @@
 
         <section class="gallery">
             {% if page.gallery != empty and page.gallery.size > 0 %}
-                {% for entry in page.gallery %}
-                    <figure class="gallery__entry">
-                        <a href="{{ entry.image }}" target="_blank">
-                                <img
-                                    alt="{% if entry.alt != '' %}{{ entry.alt }}{% else %}{{ entry.image | remove:'/images/uploads/' }}{% endif %}"
-                                    src="{{ entry.image }}"
-                                />
-                        </a>
-                    </figure>
-                    {% if entry.description %}
-                        <figcaption>
-                            {{ entry.description }}
-                        </figcaption>
-                    {% endif %}
-                {% endfor %}
+            {% for entry in page.gallery %}
+            <figure class="gallery__entry">
+                <a href="{{ entry.image }}" target="_blank">
+                    <img alt="{% if entry.alt != '' %}{{ entry.alt }}{% else %}{{ entry.image | remove:'/images/uploads/' }}{% endif %}"
+                        src="{{ entry.image }}" />
+                </a>
+            </figure>
+            {% if entry.description %}
+            <figcaption>
+                {{ entry.description }}
+            </figcaption>
+            {% endif %}
+            {% endfor %}
             {% endif %}
         </section>
 

@@ -6,6 +6,7 @@ cost: '35000'
 in_stock: '1'
 featured: false
 layout: product
+available: false
 gallery:
   - image: /images/uploads/black-jacket-flash.jpg
   - image: /images/uploads/black-jacket.jpg

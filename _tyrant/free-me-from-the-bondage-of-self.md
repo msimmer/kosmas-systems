@@ -6,6 +6,7 @@ cost: '5000'
 in_stock: '0'
 featured: false
 layout: product
+available: false
 gallery:
   - image: /images/uploads/bondage-front.jpg
   - image: /images/uploads/bondage-back.jpg

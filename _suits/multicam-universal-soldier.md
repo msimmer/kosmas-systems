@@ -6,6 +6,7 @@ thumbnail: /images/uploads/camo-suit.jpg
 cost: '64900'
 in_stock: '1'
 layout: product
+available: false
 gallery:
   - image: /images/uploads/camo-suit.jpg
   - image: /images/uploads/camo-suit-back.jpg

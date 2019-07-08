@@ -6,6 +6,7 @@ thumbnail: /images/uploads/tyrant-fear.jpg
 cost: '4000'
 in_stock: '0'
 layout: product
+available: false
 gallery:
   - image: /images/uploads/tyrant-fear.jpg
   - image: /images/uploads/tyrant-fear-back.jpg

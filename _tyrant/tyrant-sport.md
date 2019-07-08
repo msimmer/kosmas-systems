@@ -6,6 +6,7 @@ cost: '4000'
 in_stock: '0'
 featured: false
 layout: product
+available: false
 gallery:
   - image: /images/uploads/tyrant-sport.jpg
   - image: /images/uploads/tyrant-sport-back.jpg
