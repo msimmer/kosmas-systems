@@ -1,10 +1,10 @@
 ---
 title: Dark Grey Jersey
 date: 2018-03-03T14:10:27.936Z
-featured: false
 thumbnail: /images/uploads/grey-sweatshirt-suit.jpg
 cost: '25000'
-in_stock: '1'
+in_stock: '0'
+featured: false
 layout: product
 gallery:
   - image: /images/uploads/grey-sweatshirt-suit.jpg
@@ -16,4 +16,5 @@ paypal: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\
 Inside Jacket Pocket
 
 Seat Pocket
+
 
