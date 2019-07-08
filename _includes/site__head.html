@@ -1,17 +1,19 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="index, follow">
 
-    <title>{{ site.title }}{% if page.title %} : {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{{ site.title }}{% if page.title %} : {{ page.title }}{% endif %}</title>
 
     <!-- meta -->
     <meta name="description" content="{{ site.data.settings.description }}">
     <meta name="google-site-verification" content="{{ site.data.settings.google_analytics_site_verification }}">
     <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.data.settings.url }}">
+    <meta property="og:url"
+        content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.data.settings.url }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{{ site.data.settings.description }}">
     <meta property="og:image" content="{{ site.data.settings.og_image | image_path }}">
@@ -31,14 +33,16 @@
     <link name="msapplication-TileColor" content="#ffffff" />
     <link name="msapplication-TileImage" content="{% asset 'mstile-144x144.png' @path %}" />
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | prepend: site.data.settings.url }}">
+    <link rel="canonical"
+        href="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | prepend: site.data.settings.url }}">
 
     {% asset application.css %}
 
 </head>
-<body class="{{ page.layout }}{% if page.slug %} {{ page.layout }}__{{ page.slug }}{% endif %}">
-<div class="site">
 
-<header class="site__header">
-    <h1><a href="/">Kosmas Systems</a></h1>
-</header>
+<body class="{{ page.layout }}{% if page.slug %} {{ page.layout }}__{{ page.slug }}{% endif %}">
+    <div class="site">
+
+        <header class="site__header">
+            <h1><a href="/">Kosmas Systems</a></h1>
+        </header>

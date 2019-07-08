@@ -98,35 +98,59 @@ assets:
     - _vendor
 
 
+navigation_groups:
+  - 
+    display_name: "Fashion"
+    collections: 
+      - tyrant
+      - suits
+      - furniture
+      - jackets
+  - 
+    display_name: "Art"
+    collections: 
+      - artworks
+
+
 collections:
   tyrant:
     display_name: "Tyrant"
     singular_name: "Tyrant"
     output: true
     permalink: /tyrant/:path/
-    navigation: true
+    fashion: true
     navigation_index: 0
   suits:
     display_name: "Suits"
     singular_name: "Suit"
     output: true
     permalink: /suits/:path/
-    navigation: true
+    fashion: true
     navigation_index: 2
   furniture:
     display_name: "Furniture"
     singular_name: "Furniture"
     output: true
     permalink: /furniture/:path/
-    navigation: true
+    fashion: true
     navigation_index: 3
   jackets:
     display_name: "Jackets"
     singular_name: "Jacket"
     output: true
     permalink: /jackets/:path/
-    navigation: true
+    fashion: true
     navigation_index: 1
+  artworks:
+    display_name: "Art"
+    singular_name: "Art"
+    output: true
+    permalink: /art/:path/
+  writing:
+    display_name: "Writing"
+    singular_name: "Writing"
+    output: true
+    permalink: /writing/:path/
   pages:
     display_name: "Pages"
     singular_name: "Page"
@@ -137,12 +161,6 @@ tyrant:
   template: _tmpl/product.yml
   extension: md
   dir: _tyrant
-
-furniture:
-  collection: furniture
-  template: _tmpl/product.yml
-  extension: md
-  dir: _furniture
 
 jackets:
   collection: jackets
@@ -155,3 +173,15 @@ pages:
   template: _tmpl/page.yml
   extension: md
   dir: _pages
+
+artworks:
+  collection: artworks
+  template: _tmpl/artwork.yml
+  extension: md
+  dir: _artworks
+
+writing:
+  collection: writing
+  template: _tmpl/writing.yml
+  extension: md
+  dir: _writing

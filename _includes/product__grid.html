@@ -1,34 +1,32 @@
-{% assign navigation = site.collections | where: 'navigation', true | sort: 'navigation_index' %}
+{% assign navigation = site.collections | where: 'fashion', true | sort: 'navigation_index' %}
 
 <div class="product__grid">
 
-        {% for collection in navigation %}
-        {% if collection.docs.size > 0 %}
-            {% assign entries = site[collection.label] | sort_products %}
-            {% for entry in entries %}
-                {% if entry.featured && entry.thumbnail %}
-                    {% include product__grid__item.html %}
-                {% endif %}
-            {% endfor %}
-        {% endif %}
+    {% for collection in navigation %}
+    {% if collection.docs.size > 0 %}
+    {% assign entries = site[collection.label] | sort_products %}
+    {% for entry in entries %}
+    {% if entry.featured && entry.thumbnail %}
+    {% include product__grid__item.html %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
     {% endfor %}
 
 
-
-
     {% for collection in navigation %}
-        {% if collection.docs.size > 0 %}
-            {% assign entries = site[collection.label] | sort_products %}
-            {% for entry in entries %}
-                {% if entry.featured == false && entry.thumbnail %}
-                    {% include product__grid__item.html %}
-                {% endif %}
-            {% endfor %}
-        {% endif %}
+    {% if collection.docs.size > 0 %}
+    {% assign entries = site[collection.label] | sort_products %}
+    {% for entry in entries %}
+    {% if entry.featured == false && entry.thumbnail %}
+    {% include product__grid__item.html %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
     {% endfor %}
 
 </div>
 
 <script>
-window.ksms = window.ksms || {}
+    window.ksms = window.ksms || {}
 </script>

@@ -1,0 +1,28 @@
+{% include site__head.html %}
+
+<main>
+    {% include nav__main.html %}
+
+    <article>
+
+        <header class="article__header">
+            <h1>{{ page.title }}</h1>
+        </header>
+
+        <section class="content">
+            {{ content }}
+        </section>
+
+        <section class="gallery">
+            {% if page.thumbnail %}
+            <figure class="gallery__entry">
+                <img alt="{{ site.title }}{% if page.title %} : {{ page.title }}{% endif %}"
+                    src="{{ page.thumbnail }}" />
+            </figure>
+            {% endif %}
+        </section>
+
+    </article>
+</main>
+
+{% include site__tail.html %}
