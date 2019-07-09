@@ -1,5 +1,5 @@
 ---
-title: 'Mil Jacket '
+title: 'Orange Mil Jacket '
 date: 2019-07-09T01:19:26.627Z
 thumbnail: /images/uploads/military jacket orange.jpg
 cost: '4500'
@@ -11,4 +11,4 @@ gallery:
   - image: /images/uploads/military jacket orange.jpg
 paypal: null
 ---
-Heavy Canvas Mil Field Jacket
+Heavy Canvas
