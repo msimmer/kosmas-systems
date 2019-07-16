@@ -11,4 +11,3 @@ gallery:
   - image: /images/uploads/military jacket white.jpg
 paypal: null
 ---
-null

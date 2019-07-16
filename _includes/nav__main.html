@@ -1,4 +1,5 @@
-{% assign current_layout = page.layout %}
+{% assign layout = page.layout %}
+{% assign slug = page.slug %}
 
 <nav class="nav__main">
     <h1>
@@ -9,10 +10,10 @@
     </button>
 
     <div class="nav__main__container">
-        {% if site.artworks.size > 0 %}
-        <h2 class="nav__title" data-nav-link="art">Art</h2>
-        <ul class="nav__list {% if current_layout == 'artwork' %}open{% endif %}" data-nav-list="art">
-            {% for entry in site.artworks %}
+        {% if site.art.size > 0 %}
+        <h2 class="nav__title"><a href="/art/">Art</a></h2>
+        <ul class="nav__list {% if layout == 'art' or slug == 'art' %}expanded{% endif %}">
+            {% for entry in site.art %}
             <li class="nav__list__item nav__list__item--indented">
                 <a class="nav__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
                     href="{{ entry.url }}">{{ entry.title }}</a>
@@ -21,12 +22,11 @@
         </ul>
         {% endif %}
 
-        <h2 class="nav__title" data-nav-link="fashion">Fashion</h2>
+        <h2 class="nav__title"><a href="/fashion/">Fashion</a></h2>
         {% assign fashion = site.collections | where: 'fashion', true | sort: 'navigation_index' %}
         {% for collection in fashion %}
         {% if collection.docs.size > 0 %}
-        <ul class="nav__list {% if current_layout == 'product' or current_layout == 'home' %}open{% endif %}"
-            data-nav-list="fashion">
+        <ul class="nav__list {% if layout == 'product' or slug == 'fashion' %}expanded{% endif %}">
             <li class="nav__list__item">
                 <h2 class="nav__title">
                     {{ collection.display_name }}</h2>
@@ -45,10 +45,10 @@
         {% endfor %}
 
         {% if site.writing.size > 0 %}
-        <h2 class="nav__title" data-nav-link="writing">Writing</h2>
-        <ul class="nav__list {% if current_layout == 'writing' %}open{% endif %}" data-nav-list="writing">
+        <h2 class="nav__title"><a href="/writing/">Writing</a></h2>
+        <ul class="nav__list {% if layout == 'writing' or slug == 'writing' %}expanded{% endif %}">
             {% for entry in site.writing %}
-            <li class="nav__list__item">
+            <li class="nav__list__item nav__list__item--indented">
                 <a class="nav__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
                     href="{{ entry.url }}">{{ entry.title }}</a>
             </li>

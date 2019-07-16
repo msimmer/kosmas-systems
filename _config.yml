@@ -109,7 +109,7 @@ navigation_groups:
   - 
     display_name: "Art"
     collections: 
-      - artworks
+      - art
 
 
 collections:
@@ -117,31 +117,31 @@ collections:
     display_name: "Tyrant"
     singular_name: "Tyrant"
     output: true
-    permalink: /tyrant/:path/
+    permalink: /fashion/tyrant/:path/
     fashion: true
     navigation_index: 0
   jackets:
     display_name: "Jackets"
     singular_name: "Jacket"
     output: true
-    permalink: /jackets/:path/
+    permalink: /fashion/jackets/:path/
     fashion: true
     navigation_index: 1
   suits:
     display_name: "Suits"
     singular_name: "Suit"
     output: true
-    permalink: /suits/:path/
+    permalink: /fashion/suits/:path/
     fashion: true
     navigation_index: 2
   ks1:
     display_name: "KS1"
     singular_name: "KS1"
     output: true
-    permalink: /ks1/:path/
+    permalink: /fashion/ks1/:path/
     fashion: true
     navigation_index: 3
-  artworks:
+  art:
     display_name: "Art"
     singular_name: "Art"
     output: true
@@ -180,11 +180,11 @@ pages:
   extension: md
   dir: _pages
 
-artworks:
-  collection: artworks
-  template: _tmpl/artwork.yml
+art:
+  collection: art
+  template: _tmpl/art.yml
   extension: md
-  dir: _artworks
+  dir: _art
 
 writing:
   collection: writing

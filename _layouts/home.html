@@ -2,8 +2,13 @@
 
 <main>
     {% include nav__main.html %}
-
-    {% include product__grid.html %}
+    {% if page.thumbnail %}
+    <div class="product__grid">
+        <div class="image__featured">
+            <img src="{{ page.thumbnail | image_path }}" alt="{{ site.title }}">
+        </div>
+    </div>
+    {% endif %}
 </main>
 
 {% include site__tail.html %}

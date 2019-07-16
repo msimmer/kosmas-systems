@@ -119,9 +119,9 @@ collections:
 
         - {label: "Paypal Button", name: paypal, widget: markdown, required: false}
 
-  - name: artwork
+  - name: art
     label: Art
-    folder: _artwork
+    folder: _art
     create: true
     slug: "{{slug}}"
     card: {type: alltype, text: title}
@@ -130,8 +130,8 @@ collections:
         - {label: "Publish Date", name: date, widget: datetime}
         - {label: Featured Image, name: thumbnail, widget: image}
         - {label: Body, name: body, widget: markdown, required: false}
-        - {label: Featured, name: featured, widget: boolean, default: false}
-        - {label: Layout, name: layout, widget: hidden, default: artwork}
+        # - {label: Featured, name: featured, widget: boolean, default: false}
+        - {label: Layout, name: layout, widget: hidden, default: art}
         - name: gallery
           label: "Gallery Image"
           widget: list
@@ -151,7 +151,7 @@ collections:
         - {label: "Publish Date", name: date, widget: datetime}
         - {label: Featured Image, name: thumbnail, widget: image}
         - {label: Body, name: body, widget: markdown, required: false}
-        - {label: Featured, name: featured, widget: boolean, default: false}
+        # - {label: Featured, name: featured, widget: boolean, default: false}
         - {label: Layout, name: layout, widget: hidden, default: writing}
         
   - name: pages
@@ -163,7 +163,7 @@ collections:
     fields:
         - {label: Title, name: title, widget: string}
         - {label: "Publish Date", name: date, widget: datetime}
-        # - {label: Featured Image, name: thumbnail, widget: image}
+        - {label: Featured Image, name: thumbnail, widget: image}
         - {label: Body, name: body, widget: markdown}
 
   - name: "settings"

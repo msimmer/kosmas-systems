@@ -21,19 +21,4 @@ $(function() {
 
         images.eq(index).show()
     }
-
-    // menu toggle
-    $('[data-nav-link]').on('click', function(e) {
-        e.preventDefault()
-        var name = $(this).attr('data-nav-link')
-        var list = $('[data-nav-list="' + name + '"]')
-        if (list.hasClass('open')) {
-            list.removeClass('open')
-            return
-        }
-        $('[data-nav-list]')
-            .not(list)
-            .removeClass('open')
-        list.addClass('open')
-    })
 })

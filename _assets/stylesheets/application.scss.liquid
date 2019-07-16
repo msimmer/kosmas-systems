@@ -514,15 +514,28 @@ footer {
     }
 }
 
-[data-nav-link] {
-    user-select: none;
-    cursor: pointer;
-}
-
-[data-nav-list] {
+.nav__list {
     display: none;
-    &.open {
+    &.expanded {
         display: block;
         padding-bottom: 10px !important;
+        .nav__list {
+            display: block;
+        }
     }
+}
+
+.image__featured {
+    width: 100%;
+    height: 100vh;
+    img {
+        object-fit: cover;
+        object-position: top left;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+body.home {
+    overflow: hidden;
 }

@@ -1,0 +1,9 @@
+<div class="product__grid">
+    {% for entry in site[page.slug] %}
+    {% include grid__item.html %}
+    {% endfor %}
+</div>
+
+<script>
+    window.ksms = window.ksms || {}
+</script>
