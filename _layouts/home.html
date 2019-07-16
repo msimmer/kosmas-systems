@@ -2,10 +2,10 @@
 
 <main>
     {% include nav__main.html %}
-    {% if page.thumbnail %}
+    {% if site.data.settings.thumbnail %}
     <div class="product__grid">
         <div class="image__featured">
-            <img src="{{ page.thumbnail | image_path }}" alt="{{ site.title }}">
+            <img src="{{ site.data.settings.thumbnail | image_path }}" alt="{{ site.title }}">
         </div>
     </div>
     {% endif %}

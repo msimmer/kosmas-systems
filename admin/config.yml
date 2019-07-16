@@ -176,6 +176,7 @@ collections:
         file: "_data/settings.yml"
         description: "General Site Settings"
         fields:
+          - {label: Featured Image, name: thumbnail, widget: image}
           - {label: "Description", name: description, widget: string}
           - {label: "Site URL", name: url, widget: string, default: 'https://example.com'}
           - {label: "Logo", name: logo, widget: image}
