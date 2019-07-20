@@ -156,11 +156,16 @@ a:active {
 }
 
 .article__header {
-    h1 {
-        margin-bottom: 0;
-    }
     p {
         margin-top: 0;
+    }
+}
+
+body.product {
+    .article__header {
+        h1 {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -525,17 +530,26 @@ footer {
     }
 }
 
-.image__featured {
-    width: 100%;
-    height: 100vh;
-    img {
-        object-fit: cover;
-        object-position: top left;
-        width: 100%;
-        height: 100%;
-    }
-}
-
 body.home {
     overflow: hidden;
+    .product__grid {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        flex: 0;
+        padding: 25px;
+    }
+
+    .image__featured {
+        width: 100%;
+        height: 100%;
+        img {
+            object-fit: contain;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
