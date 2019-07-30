@@ -6,4 +6,3 @@ layout: art
 gallery:
   - image: /images/uploads/kosmas warsaw 1.jpg
 ---
-null
