@@ -7,4 +7,4 @@ gallery:
   - image: /images/uploads/SoulCloneSystem.jpg
   - image: /images/uploads/SoulCloneSystemCrop.jpg
 ---
-Soul Clone System
+
