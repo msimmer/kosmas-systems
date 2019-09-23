@@ -1,7 +1,23 @@
 {% include site__head.html %}
+<style>
+  .site {
+    min-height: unset;
+  }
 
+  .error__message {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+</style>
 <main>
-<h1>404</h1>
+  {% include nav__main.html %}
+  <h1 class="error__message">404</h1>
 </main>
 
 {% include site__tail.html %}
