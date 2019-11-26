@@ -7,4 +7,4 @@ gallery:
   - image: /images/uploads/ring_01.jpg
   - image: /images/uploads/ring_08.jpg
 ---
-null
+
