@@ -6,4 +6,4 @@ layout: art
 gallery:
   - image: /images/uploads/KOSMAS@ADG_05_800p.jpg
 ---
-null
+
