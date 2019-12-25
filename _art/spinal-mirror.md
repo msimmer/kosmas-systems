@@ -8,5 +8,4 @@ gallery:
   - image: /images/uploads/nik_kosmas_sculpture_kevkoko_dark_bright.jpg
   - image: /images/uploads/nik_kosmas_sculpture_kevkoko_detail_web.jpg
 ---
-Spinal Mirror, 2019
 
