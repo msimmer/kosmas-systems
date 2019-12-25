@@ -6,4 +6,4 @@ layout: art
 gallery:
   - image: /images/uploads/tower-klontal-2017.jpg
 ---
-null
+
