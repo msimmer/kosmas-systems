@@ -6,98 +6,13 @@ backend:
 media_folder: images/uploads # Media files will be stored in the repo under images/uploads
 
 collections:
-  - name: tyrant # Used in routes, e.g., /admin/collections/blog
-    label: Tyrant # Used in the UI
-    folder: _tyrant # The path to the folder where the documents are stored
+  - name: gift_shop # Used in routes, e.g., /admin/collections/blog
+    label: Gift Shop # Used in the UI
+    folder: _gift_shop # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     card: {type: alltype, text: title}
     fields: # The fields for each document, usually in front matter
-        - {label: Title, name: title, widget: string}
-        - {label: "Publish Date", name: date, widget: datetime}
-        - {label: Featured Image, name: thumbnail, widget: image}
-        - {label: Body, name: body, widget: markdown, required: false}
-
-        - {label: Cost, name: cost, widget: number}
-        - {label: Stock, name: in_stock, widget: number}
-        - {label: Available, name: available, widget: boolean, default: false}
-        - {label: Featured, name: featured, widget: boolean, default: false}
-        - {label: Layout, name: layout, widget: hidden, default: product}
-
-        - name: gallery
-          label: "Gallery Image"
-          widget: list
-          fields:
-              - {label: "Alt Tag", name: alt, widget: string}
-              - {label: Description, name: description, widget: string}
-              - {label: Image, name: image, widget: image}
-
-        - {label: "Paypal Button", name: paypal, widget: markdown, required: false}
-
-
-  - name: suits
-    label: Suits
-    folder: _suits
-    create: true
-    slug: "{{slug}}"
-    card: {type: alltype, text: title}
-    fields:
-        - {label: Title, name: title, widget: string}
-        - {label: "Publish Date", name: date, widget: datetime}
-        - {label: Featured Image, name: thumbnail, widget: image}
-        - {label: Body, name: body, widget: markdown, required: false}
-
-        - {label: Cost, name: cost, widget: number}
-        - {label: Stock, name: in_stock, widget: number}
-        - {label: Available, name: available, widget: boolean, default: false}
-        - {label: Featured, name: featured, widget: boolean, default: false}
-        - {label: Layout, name: layout, widget: hidden, default: product}
-
-        - name: gallery
-          label: "Gallery Image"
-          widget: list
-          fields:
-              - {label: "Alt Tag", name: alt, widget: string}
-              - {label: Description, name: description, widget: string}
-              - {label: Image, name: image, widget: image}
-
-        - {label: "Paypal Button", name: paypal, widget: markdown, required: false}
-        
-  - name: jackets
-    label: Jackets
-    folder: _jackets
-    create: true
-    slug: "{{slug}}"
-    card: {type: alltype, text: title}
-    fields:
-        - {label: Title, name: title, widget: string}
-        - {label: "Publish Date", name: date, widget: datetime}
-        - {label: Featured Image, name: thumbnail, widget: image}
-        - {label: Body, name: body, widget: markdown, required: false}
-
-        - {label: Cost, name: cost, widget: number}
-        - {label: Stock, name: in_stock, widget: number}
-        - {label: Available, name: available, widget: boolean, default: false}
-        - {label: Featured, name: featured, widget: boolean, default: false}
-        - {label: Layout, name: layout, widget: hidden, default: product}
-
-        - name: gallery
-          label: "Gallery Image"
-          widget: list
-          fields:
-              - {label: "Alt Tag", name: alt, widget: string}
-              - {label: Description, name: description, widget: string}
-              - {label: Image, name: image, widget: image}
-
-        - {label: "Paypal Button", name: paypal, widget: markdown, required: false}
-
-  - name: ks1
-    label: ks1
-    folder: _ks1
-    create: true
-    slug: "{{slug}}"
-    card: {type: alltype, text: title}
-    fields:
         - {label: Title, name: title, widget: string}
         - {label: "Publish Date", name: date, widget: datetime}
         - {label: Featured Image, name: thumbnail, widget: image}

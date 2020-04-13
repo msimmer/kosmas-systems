@@ -131,24 +131,6 @@ collections:
     singular_name: "Page"
     output: true
 
-tyrant:
-  collection: tyrant
-  template: _tmpl/product.yml
-  extension: md
-  dir: _tyrant
-
-jackets:
-  collection: jackets
-  template: _tmpl/product.yml
-  extension: md
-  dir: _jackets
-
-ks1:
-  collection: ks1
-  template: _tmpl/product.yml
-  extension: md
-  dir: _ks1
-
 pages:
   collection: pages
   template: _tmpl/page.yml
@@ -169,6 +151,6 @@ writing:
 
 gift_shop:
   collection: gift_shop
-  template: _tmpl/gift_shop.yml
+  template: _tmpl/product.yml
   extension: md
   dir: _gift_shop
