@@ -100,12 +100,9 @@ assets:
 
 navigation_groups:
   - 
-    display_name: "Fashion"
+    display_name: "Gift Shop"
     collections: 
-      - tyrant
-      - suits
-      - furniture
-      - jackets
+      - gift_shop
   - 
     display_name: "Art"
     collections: 
@@ -113,34 +110,12 @@ navigation_groups:
 
 
 collections:
-  tyrant:
-    display_name: "Tyrant"
-    singular_name: "Tyrant"
+  gift_shop:
+    display_name: "Gift Shop"
+    singular_name: "Gift Shop"
     output: true
-    permalink: /fashion/tyrant/:path/
-    fashion: true
-    navigation_index: 0
-  jackets:
-    display_name: "Jackets"
-    singular_name: "Jacket"
-    output: true
-    permalink: /fashion/jackets/:path/
-    fashion: true
-    navigation_index: 1
-  suits:
-    display_name: "Suits"
-    singular_name: "Suit"
-    output: true
-    permalink: /fashion/suits/:path/
-    fashion: true
-    navigation_index: 2
-  ks1:
-    display_name: "KS1"
-    singular_name: "KS1"
-    output: true
-    permalink: /fashion/ks1/:path/
-    fashion: true
-    navigation_index: 3
+    gift_shop: true
+    permalink: /gift_shop/:path/
   art:
     display_name: "Art"
     singular_name: "Art"
@@ -191,3 +166,9 @@ writing:
   template: _tmpl/writing.yml
   extension: md
   dir: _writing
+
+gift_shop:
+  collection: gift_shop
+  template: _tmpl/gift_shop.yml
+  extension: md
+  dir: _gift_shop
