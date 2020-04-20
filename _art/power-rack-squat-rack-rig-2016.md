@@ -6,5 +6,6 @@ layout: art
 gallery:
   - image: /images/uploads/kosmas bb9 install .jpg
   - image: /images/uploads/BB9_Nik_Kosmas_03.jpg
+published: true
 ---
 

@@ -15,5 +15,6 @@ gallery:
   - image: >-
       /images/uploads/23 Narcotics, 2020, installation view, photo Roman-Sten
       Tõnissoo.jpg
+published: true
 ---
 

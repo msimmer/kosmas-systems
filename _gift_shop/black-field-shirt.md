@@ -10,5 +10,6 @@ layout: product
 gallery:
   - image: /images/uploads/black shirt.jpg
 paypal: null
+published: true
 ---
 Polyester

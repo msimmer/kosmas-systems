@@ -7,6 +7,7 @@ gallery:
   - image: /images/uploads/resized-fighters.jpg
   - image: /images/uploads/resized-spine.png
   - image: /images/uploads/resized-climb.png
+published: true
 ---
 
 

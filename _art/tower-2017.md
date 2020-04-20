@@ -5,5 +5,6 @@ thumbnail: /images/uploads/tower-klontal-2017.jpg
 layout: art
 gallery:
   - image: /images/uploads/tower-klontal-2017.jpg
+published: true
 ---
 

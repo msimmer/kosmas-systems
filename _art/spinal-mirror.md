@@ -7,5 +7,6 @@ gallery:
   - image: /images/uploads/nik_kosmas_light_kevkoko_bright_web.jpg
   - image: /images/uploads/nik_kosmas_sculpture_kevkoko_dark_bright.jpg
   - image: /images/uploads/nik_kosmas_sculpture_kevkoko_detail_web.jpg
+published: true
 ---
 

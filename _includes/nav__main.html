@@ -2,50 +2,55 @@
 {% assign slug = page.slug %}
 
 <nav class="nav__main">
-    <h1>
-        <a href="/">Kosmas Systems</a>
-    </h1>
-    <button class="nav__toggle">
-        <span class="nav__indicator">+</span>
-    </button>
+  <h1>
+    <a href="/">Kosmas Systems</a>
+  </h1>
+  <button class="nav__toggle">
+    <span class="nav__indicator">+</span>
+  </button>
 
-    <div class="nav__main__container">
-        {% if site.art.size > 0 %}
-        <h2 class="nav__title"><a href="/art/">Art</a></h2>
-        <ul class="nav__list {% if layout == 'art' or slug == 'art' %}expanded{% endif %}">
-            {% for entry in site.art %}
-            <li class="nav__list__item nav__list__item--indented">
-                <a class="nav__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
-                    href="{{ entry.url }}">{{ entry.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+  <div class="nav__main__container">
+    {% assign art = site.art | where: "published", true %}
+    {% if art.size > 0 %}
+    <h2 class="nav__title"><a href="/art/">Art</a></h2>
+    <ul class="nav__list {% if layout == 'art' or slug == 'art' %}expanded{% endif %}">
+      {% for entry in art %}
+      {% if entry.published %}
+      <li class="nav__list__item nav__list__item--indented">
+        <a class="nav__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
+          href="{{ entry.url }}">{{ entry.title }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
 
-        {% if site.writing.size > 0 %}
-        <h2 class="nav__title"><a href="/writing/">Writing</a></h2>
-        <ul class="nav__list {% if layout == 'writing' or slug == 'writing' %}expanded{% endif %}">
-            {% for entry in site.writing %}
-            <li class="nav__list__item nav__list__item--indented">
-                <a class="nav__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
-                    href="{{ entry.url }}">{{ entry.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+    {% assign writing = site.writing | where: "published", true %}
+    {% if writing.size > 0 %}
+    <h2 class="nav__title"><a href="/writing/">Writing</a></h2>
+    <ul class="nav__list {% if layout == 'writing' or slug == 'writing' %}expanded{% endif %}">
+      {% for entry in writing %}
+      <li class="nav__list__item nav__list__item--indented">
+        <a class="nav__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
+          href="{{ entry.url }}">{{ entry.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
 
-        {% if site.gift_shop.size > 0 %}
-        <h2 class="nav__title"><a href="/gift_shop/">Gift Shop</a></h2>
-        <ul class="nav__list {% if layout == 'product' or slug == 'gift_shop' %}expanded{% endif %}">
-            {% for entry in site.gift_shop %}
-            <li class="nav__list__item nav__list__item--indented">
-                <a class="nav__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
-                    href="{{ entry.url }}">{{ entry.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+    {% assign gift_shop = site.gift_shop | where: "published", true %}
+    {% if gift_shop.size > 0 %}
+    <h2 class="nav__title"><a href="/gift_shop/">Gift Shop</a></h2>
+    <ul class="nav__list {% if layout == 'product' or slug == 'gift_shop' %}expanded{% endif %}">
+      {% for entry in gift_shop %}
+      <li class="nav__list__item nav__list__item--indented">
+        <a class="nav__list__item__link{% if entry.url == page.url %} link--active{% endif %}"
+          href="{{ entry.url }}">{{ entry.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
 
-        <ul class="nav__list nav__list--flex"></ul>
-    </div>
+    <ul class="nav__list nav__list--flex"></ul>
+  </div>
 </nav>

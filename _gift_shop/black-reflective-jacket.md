@@ -11,5 +11,6 @@ gallery:
   - image: /images/uploads/black-jacket-flash.jpg
   - image: null
 paypal: ''
+published: true
 ---
 

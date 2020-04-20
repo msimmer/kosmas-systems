@@ -5,5 +5,6 @@ thumbnail: /images/uploads/KOSMAS@ADG_13_800p.jpg
 layout: art
 gallery:
   - image: /images/uploads/KOSMAS@ADG_13_800p.jpg
+published: true
 ---
 

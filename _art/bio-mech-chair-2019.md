@@ -6,6 +6,7 @@ layout: art
 gallery:
   - image: /images/uploads/KOSMAS@ADG_02_800p.jpg
   - image: /images/uploads/KOSMAS@ADG_05_800p.jpg
+published: true
 ---
 
 

@@ -5,4 +5,5 @@ thumbnail: /images/uploads/58c01628dca4c.jpg
 layout: art
 gallery:
   - image: /images/uploads/kosmas warsaw 1.jpg
+published: true
 ---

@@ -6,5 +6,6 @@ layout: art
 gallery:
   - image: /images/uploads/SoulCloneSystem.jpg
   - image: /images/uploads/SoulCloneSystemCrop.jpg
+published: true
 ---
 

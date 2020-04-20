@@ -11,5 +11,6 @@ gallery:
   - image: /images/uploads/blue-reflective.jpg
   - image: /images/uploads/blue-jacket-flash.jpg
 paypal: ''
+published: true
 ---
 
