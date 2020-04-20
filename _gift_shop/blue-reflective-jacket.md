@@ -1,4 +1,5 @@
 ---
+published: false
 title: Blue Reflective Jacket
 date: 2018-07-05T11:33:52.161Z
 thumbnail: /images/uploads/blue-jacket-half.jpg
@@ -11,6 +12,6 @@ gallery:
   - image: /images/uploads/blue-reflective.jpg
   - image: /images/uploads/blue-jacket-flash.jpg
 paypal: ''
-published: true
 ---
+
 
