@@ -10,6 +10,6 @@ layout: product
 gallery:
   - image: /images/uploads/military jacket black.jpg
 paypal: null
-published: true
+published: false
 ---
 Japanese Polyester

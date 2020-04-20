@@ -10,7 +10,7 @@ layout: product
 gallery:
   - image: /images/uploads/military jacket orange.jpg
 paypal: null
-published: true
+published: false
 ---
 Heavy Canvas
 

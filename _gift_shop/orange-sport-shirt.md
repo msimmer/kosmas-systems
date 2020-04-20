@@ -10,7 +10,7 @@ layout: product
 gallery:
   - image: /images/uploads/orange shirt.jpg
 paypal: null
-published: true
+published: false
 ---
 
 

@@ -11,7 +11,7 @@ gallery:
   - image: /images/uploads/tyrant-sport.jpg
   - image: /images/uploads/tyrant-sport-back.jpg
 paypal: ''
-published: true
+published: false
 ---
 
 Hand Painted

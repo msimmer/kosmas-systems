@@ -10,6 +10,6 @@ layout: product
 gallery:
   - image: /images/uploads/green shirt.jpg
 paypal: ''
-published: true
+published: false
 ---
 Light Cotton

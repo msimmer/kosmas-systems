@@ -10,6 +10,6 @@ layout: product
 gallery:
   - image: /images/uploads/blue shirt.jpg
 paypal: null
-published: true
+published: false
 ---
 Polyester
