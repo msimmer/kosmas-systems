@@ -12,7 +12,6 @@ gallery:
   - image: /images/uploads/Gaia Exceeds.jpg
 paypal: null
 ---
-Gaia Exceeds
 
 digital print transfer on cotton
 
