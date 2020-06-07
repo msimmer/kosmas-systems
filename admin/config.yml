@@ -60,9 +60,9 @@ collections:
           name: layout
           widget: select
           options:
-            - { label: Art, value: art }
-            - { label: PDF, value: pdf }
-          default: art
+            - { label: "Art", value: "art" }
+            - { label: "PDF", value: "pdf" }
+          default: ["art"]
 
         - name: gallery
           label: "Gallery Image"
