@@ -1,37 +1,36 @@
 {% include site__head.html %}
 
 <main>
-    {% include nav__main.html %}
+	{% include nav__main.html %}
 
-    <article>
+	<article>
 
-        <header class="article__header">
-            <h1>{{ page.title }}</h1>
-        </header>
+		<header class="article__header">
+			<h1>{{ page.title }}</h1>
+		</header>
 
-        <section class="content">
-            {{ content }}
-        </section>
+		<section class="content">
+			{{ content }}
+		</section>
 
-        <section class="gallery">
-            {% if page.gallery != empty and page.gallery.size > 0 %}
-            {% for entry in page.gallery %}
-            <figure class="gallery__entry">
-                <a href="{{ entry.image }}" target="_blank">
-                    <img alt="{% if entry.alt != '' %}{{ entry.alt }}{% else %}{{ entry.image | remove:'/images/uploads/' }}{% endif %}"
-                        src="{{ entry.image }}" />
-                </a>
-            </figure>
-            {% if entry.description %}
-            <figcaption>
-                {{ entry.description }}
-            </figcaption>
-            {% endif %}
-            {% endfor %}
-            {% endif %}
-        </section>
+		<section class="gallery">
+			{% if page.gallery != empty and page.gallery.size > 0 %}
+				{% for entry in page.gallery %}
+					<figure class="gallery__entry">
+						<a href="{{ entry.image }}" target="_blank">
+							<img alt="{% if entry.alt != '' %}{{ entry.alt }}{% else %}{{ entry.image | remove:'/images/uploads/' }}{% endif %}" src="{{ entry.image }}"/>
+						</a>
+					</figure>
+					{% if entry.description %}
+						<figcaption>
+							{{ entry.description }}
+						</figcaption>
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		</section>
 
-    </article>
+	</article>
 </main>
 
 {% include site__tail.html %}

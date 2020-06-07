@@ -1,0 +1,21 @@
+{% include site__head.html %}
+
+<main>
+	{% include nav__main.html %}
+
+	<article>
+
+		<header class="article__header">
+			<h1>{{ page.title }}</h1>
+		</header>
+
+		<section class="content">
+			<section class="pdf-container" data-pdf="{{ page.pdf_url }}">
+				<canvas id="pdf-canvas"></canvas>
+			</section>
+
+		</section>
+	</article>
+</main>
+
+{% include site__tail.html %}

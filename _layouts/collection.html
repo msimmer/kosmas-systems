@@ -1,13 +1,13 @@
 {% include site__head.html %}
 
 <main>
-    {% include nav__main.html %}
+	{% include nav__main.html %}
 
-    {% if page.slug == 'gift_shop' %}
-    {% include product__grid.html %}
-    {% else %}
-    {% include grid.html %}
-    {% endif %}
+	{% if page.slug == 'gift_shop' %}
+		{% include product__grid.html %}
+	{% else %}
+		{% include grid.html %}
+	{% endif %}
 </main>
 
 {% include site__tail.html %}

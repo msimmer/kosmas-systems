@@ -15,5 +15,8 @@
   "homepage": "https://github.com/msimmer/kosmas-systems#readme",
   "devDependencies": {
     "jquery": "^3.4.0"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^2.4.456"
   }
 }

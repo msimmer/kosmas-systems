@@ -47,8 +47,23 @@ collections:
         - {label: "Publish Date", name: date, widget: datetime}
         - {label: Featured Image, name: thumbnail, widget: image}
         - {label: Body, name: body, widget: markdown, required: false}
-        # - {label: Featured, name: featured, widget: boolean, default: false}
-        - {label: Layout, name: layout, widget: hidden, default: art}
+        
+        - label: PDF
+          name: pdf_url
+          widget: file
+          required: false
+          media_library:
+            config:
+              allow_multiple: false
+
+        - name: Layout
+          name: layout
+          widget: select
+          options:
+            - { label: Art, value: art }
+            - { label: PDF, value: pdf }
+          default: art
+
         - name: gallery
           label: "Gallery Image"
           widget: list
