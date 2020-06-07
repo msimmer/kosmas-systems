@@ -60,7 +60,7 @@ collections:
           name: layout
           widget: select
           options: ["art", "pdf"]
-          default: ["art"]
+          default: "art"
 
         - name: gallery
           label: "Gallery Image"
