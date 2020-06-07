@@ -56,7 +56,7 @@ collections:
             config:
               allow_multiple: false
 
-        - name: Layout
+        - label: Layout
           name: layout
           widget: select
           options:
