@@ -1,6 +1,6 @@
 ---
 published: true
-title: BodyHunter_Luxury Problems
+title: BodyHunter Luxury Problems s01e00 (2020)
 date: 2020-06-09T13:20:42.909Z
 thumbnail: /images/uploads/BodyHunter Blood.png
 pdf_url: null
@@ -13,4 +13,4 @@ gallery:
   - image: /images/uploads/BodyHunterWebToon5.jpg
   - image: /images/uploads/BodyHunterWebToon6.jpg
 ---
-null
+
