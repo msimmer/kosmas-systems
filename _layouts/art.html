@@ -13,7 +13,7 @@
 			{{ content }}
 		</section>
 
-		<section class="gallery">
+		<section class="gallery {% if page.wetboon %}gallery__webtoon{% endif %}">
 			{% if page.gallery != empty and page.gallery.size > 0 %}
 				{% for entry in page.gallery %}
 					<figure class="gallery__entry">

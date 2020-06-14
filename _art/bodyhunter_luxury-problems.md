@@ -5,6 +5,7 @@ date: 2020-06-09T13:20:42.909Z
 thumbnail: /images/uploads/BodyHunter Blood.png
 pdf_url: null
 layout: art
+wetboon: true
 gallery:
   - image: /images/uploads/BodyHunterWebToon1.jpg
   - image: /images/uploads/BodyHunterWebToon2.jpg

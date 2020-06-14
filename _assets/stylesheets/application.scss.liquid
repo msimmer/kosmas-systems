@@ -511,10 +511,21 @@ footer {
 }
 
 // product page
-.gallery__entry {
-  @media #{$screen-large} {
-    img {
-      max-height: calc(100vh - #{$large-height + $medium-height + $v-unit});
+.gallery {
+  .gallery__entry {
+    @media #{$screen-large} {
+      img {
+        max-height: calc(100vh - #{$large-height + $medium-height + $v-unit});
+      }
+    }
+  }
+  &.gallery__webtoon {
+    .gallery__entry {
+      @media #{$screen-large} {
+        img {
+          max-height: unset;
+        }
+      }
     }
   }
 }
