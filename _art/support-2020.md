@@ -1,6 +1,6 @@
 ---
 published: true
-title: Support 2020
+title: Support (2020)
 date: 2020-07-02T10:51:27.794Z
 thumbnail: /images/uploads/support 2020 2.jpg
 wetboon: false
@@ -9,4 +9,4 @@ layout: art
 gallery:
   - image: /images/uploads/support 2020 6.jpg
 ---
-null
+
