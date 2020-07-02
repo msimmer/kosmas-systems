@@ -8,6 +8,9 @@ pdf_url: /images/uploads/support 2020 2.jpg
 layout: art
 gallery:
   - image: /images/uploads/support 2020 6.jpg
+  - image: /images/uploads/support 2020 7.jpg
+  - image: /images/uploads/support 2020 8.jpg
 ---
+
 
 
