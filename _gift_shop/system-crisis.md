@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: System Crisis
 date: 2020-06-07T11:06:16.393Z
 thumbnail: /images/uploads/System Crisis.png
@@ -15,4 +15,5 @@ paypal: null
 **digital print transfer on cotton**
 
 write me on instagram to organize purchase
+
 
