@@ -5,7 +5,7 @@ date: 2020-08-14T04:09:22.114Z
 thumbnail: /images/uploads/Fighters 2020.jpg
 cost: '1'
 in_stock: '1'
-available: true
+available: false
 featured: false
 layout: product
 gallery:
@@ -15,3 +15,4 @@ paypal: null
 digital print transfer on heavyweight cotton
 
 write me on instagram to organize purchase
+
